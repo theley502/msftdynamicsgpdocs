@@ -8,7 +8,7 @@ ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: jswymer
 ms.author: theley
-ms.date: 5/4/2023
+ms.date: 8/7/2023
 ---
 
 # Microsoft Dynamics GP Email Troubleshooting Guide
@@ -70,7 +70,7 @@ Compare a clean Outlook add-in list to the client having the issue to make sure 
 Recommend that they [remove the add-in as it appears like it is no longer needed](https://support.microsoft.com/en-us/office/add-a-gmail-account-to-outlook-70191667-9c52-4581-990e-e30318c2c081)
 ### No default mail client, or the current mail client cannot fulfill the message request Please run Microsoft Outlook and set it as the default mail client.  
 
-**Note** Recommend you review Outlook version first – MAPI only works with 32bit!  
+**Note** Recommend you review Outlook version first – **MAPI only works with 32bit!**  
 
 **Issue** Error appears when attempting to email using MAPI anywhere in GP Cause: Either a Profile is not setup, or Outlook cannot reach it using MAPI.  
 
