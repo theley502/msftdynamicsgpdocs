@@ -3,10 +3,10 @@ title: "Analytical Accounting in Microsoft Dynamics GP"
 description: "Examine how analytical accounting works in Dynamics GP."
 keywords: "payroll"
 author: theley502
-manager: edupont
+manager: jswymer
 ms.prod: dynamics-gp
 ms.topic: article
-ms.reviewer: edupont
+ms.reviewer: jswymer
 ms.author: theley
 ms.date: 05/14/2019
 ---
@@ -119,7 +119,7 @@ The following flowchart shows you the sequence in which you will set up
 Analytical Accounting, enter analysis information, and generate queries and
 reports.
 
-![A screenshot](media/AAFLOW.jpg)
+![Diagram showing the task flow for setting up analytical accounting.](media/AAFLOW.jpg)
 
 
 ### Creating default records
@@ -185,7 +185,7 @@ level of posting set to detail. Refer to *Linking accounts to an account class* 
 
     After Analytical Accounting has been activated, any account that has a level of posting set to summary in the Account Maintenance window cannot be linked to an account class. After you have linked an account to an account class, you cannot change the level of posting from detail to summary in the Account Maintenance window.
 
-    ![A screenshot](media/AAPOST.jpg)
+    ![Screenshot of the Posting Setup window.](media/AAPOST.jpg)
 
 1. Complete the setup procedures and choose OK or Save to save the posting setup.
 
@@ -214,10 +214,10 @@ Accounting system tables.
 
 **To activate Analytical Accounting:**
 
-1. Open the Analytical Accounting Setup wizard window. (Administration \>\>
+1. Open the Analytical Accounting Setup Wizard window. (Administration \>\>
     Setup \>\> Company \>\> Analytical Accounting \>\> Setup)
 
-    ![A Screenshot](media/AAWIZ.jpg)
+    ![Screenshot of the Analytical Accounting Setup Wizard window.](media/AAWIZ.jpg)
 
 1. Mark the Activate Analytical Accounting option to activate the product for
     the company you are logged into. If you have not registered Analytical
@@ -418,7 +418,7 @@ You cannot create or delete any column in this window.
 
 8. Choose OK to close the window.
 
-![A screenshot(media/b5a63aac5022ab48480513880201f344.jpg)
+![A screenshot](media/b5a63aac5022ab48480513880201f344.jpg)
 
 ## Defining fiscal years
 
@@ -433,7 +433,7 @@ or half year.
 1. Open the Reporting Periods window. (Administration \>\> Setup \>\> Company
     \>\> Analytical Accounting \>\> Options \>\> Reporting Periods button)
 
-![A Screenshot](media/AARP.jpg)
+![Screenshot of the Reporting Periods window.](media/AARP.jpg)
 
 1. The Year field displays the current open year. Select a year from the fiscal
     years set up in Microsoft Dynamics GP. The Fiscal View and the Calendar view
@@ -554,7 +554,7 @@ Fixed Asset will be marked by default on a new install or a new company.
 1. Open the Assignment Setup window. (Administration \>\> Setup \>\> Company
     \>\> Analytical Accounting \>\> Assignment)
 
-    ![A Screenshot](media/AAAS.jpg)
+    ![Screenshot of the Assignment Setup window.](media/AAAS.jpg)
 
     All the Microsoft Dynamics GP modules that integrate with Analytical Accounting are listed in the scrolling window. The Full option is marked for all by default. This indicates that the distributions must be fully assigned before you can post the transactions.
 
@@ -626,7 +626,7 @@ have permission to distribute or adjust those codes.*
 
     The Type field displays Transaction Dimension as the default selection. 
 
-    ![A screenshot](media/AAUA.jpg)
+    ![Screenshot of the User Access to Trx Dimension Codes window.](media/AAUA.jpg)
 
 1. Select an alphanumeric transaction dimension in the Transaction Dimension
     field. You can select an active or an inactive transaction dimension.
@@ -780,7 +780,7 @@ of special characters.
 1. Open the Transaction Dimension Maintenance window. (Cards \>\> Financial
     \>\> Analytical Accounting \>\> Transaction Dimension)
 
-    ![A Screenshot IMAGE – jpg](media/b77da2c964d58d499e229a18e3091a31AATDM.jpg)
+    ![A Screenshot IMAGE – jpg](media/AATDM.jpg)
 
 1. Enter the name of a transaction dimension.
 
@@ -1073,7 +1073,7 @@ Order)
 (Cards \>\> Financial \>\> Analytical Accounting \>\> Transaction Dimension
 \>\> Order Button
 
-![A screenshot](media/AATDO.jpg)
+![Screenshot of the Transaction Dimension Order window.](media/AATDO.jpg)
 
 1. The transaction dimensions and their descriptions are displayed in the
     scrolling window in the order they were created.
@@ -1117,7 +1117,7 @@ Code)
 (Cards \>\> Financial \>\> Analytical Accounting \>\> Transaction Dimension
 \>\> Codes button)
 
-![A screenshot](media/AATDC.jpg)
+![Screenshot of the Transaction Dimension Code Maintenance window.](media/AATDC.jpg)
 
 1. Enter or select an alphanumeric transaction dimension in the Trx Dimension
     field.
@@ -2516,7 +2516,7 @@ re-assign the codes.
 1. Open the Assign Budget Tree codes window. (Cards \>\> Financial \>\>
     Analytical Accounting \>\> Assign Budget Tree Codes)
 
-    ![A screenshot IMAGE – AABT.jpg](media/69124bee71206a3c37be4b2b773e19f2.jpg)
+    ![A screenshot IMAGE – AABT.jpg](media/AABT.jpg)
 
 1. Enter or select the budget tree ID for which you are assigning codes. The
     Description field displays the description for the selected budget tree ID.
@@ -2632,7 +2632,7 @@ assigned to it:
 Based on the valid relationships that the codes have with one another, the
 tree will look as follows:
 
-![A screenshot IMAGE – AABTR.jpg](media/77cfbf2c0c1a346f47d831e9f2e9c5ad.jpg)
+![A screenshot IMAGE – AABTR.jpg](media/AABTR.jpg)
 
 - The budget tree ID is the highest level of the dimension code tree, and is
     also called the root node of the tree.
@@ -2697,7 +2697,7 @@ assign amounts and accounts to the budget tree that you have created.
 1. Open the Analytical Accounting Budget Maintenance window. (Cards \>\>
     Financial \>\> Analytical Accounting \>\> Budget)
 
-    ![A Screenshot IMAGE – AABM.jpg](media/d00cebec54be3bd8c1a107a73f46e8b8.jpg)
+    ![A Screenshot IMAGE – AABM.jpg](media/AABM.jpg)
 
 1. Enter or select a budget ID and enter a description for the budget ID in the
     Description field.
@@ -3211,10 +3211,10 @@ Expense will be assigned to the lower nodes as follows:
 
 **Period 1**
 
-| PCTR \>\> PROJ             | Account A | Travel Expenses | \$1250 |   |   |
-|----------------------------|-----------|-----------------|--------|---|---|
-| PCTR \>\> PROJ \>\> PROD A | Account A | Travel Expenses | \$750  |   |   |
-| PCTR \>\> PROJ \>\> PROD B | Account A | Travel Expenses | \$500  |   |   |
+| PCTR \>\> PROJ             | Account A | Travel Expenses | \$1250 |
+|----------------------------|-----------|-----------------|--------|
+| PCTR \>\> PROJ \>\> PROD A | Account A | Travel Expenses | \$750  |
+| PCTR \>\> PROJ \>\> PROD B | Account A | Travel Expenses | \$500  |
 
 **Rolling down opening balances for posting accounts**
 
@@ -3234,9 +3234,9 @@ balance is divided for different calculation methods.
 
 **How the Opening Balance is divided among balance sheet accounts**
 
-| Posting | Equal Split      | Equally split by the number of balance sheet accounts. Refer to *Example 1*                                                                                               |   |
-|---------|------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| Posting | Percentage Split | Split by calculating the ratio of the percentage assigned to a balance sheet account to the total percentage assigned to all Balance Sheet accounts. Refer to *Example 2* |   |
+| Posting | Equal Split      | Equally split by the number of balance sheet accounts. Refer to *Example 1*                                                                                               |
+|---------|------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Posting | Percentage Split | Split by calculating the ratio of the percentage assigned to a balance sheet account to the total percentage assigned to all Balance Sheet accounts. Refer to *Example 2* |
 
 The Budget Tree A has the following nodes under it: PCTR \>\> PROJ \>\> PROD
 
@@ -3249,9 +3249,10 @@ The Budget Tree A has the following nodes under it: PCTR \>\> PROJ \>\> PROD
 The following accounts are assigned to the node Budget Tree A \>\> PCTR \>\>
 PROJ:
 
-| **Node: Budget Tree A \>\> PCTR \>\> PROJ** |                  |
-|---------------------------------------------|------------------|
+**Node: Budget Tree A \>\> PCTR \>\> PROJ**
+
 | **Account No**                              | **Account Type** |
+|---------------------------------------------|------------------|
 | Account A                                   | Profit and Loss  |
 | Account B                                   | Balance Sheet    |
 | Account C                                   | Balance Sheet    |
@@ -3514,11 +3515,11 @@ Class that is attached to all the dimensions within the budget tree ID. The
 total amounts entered against the accounts being imported should not exceed
 the budget total of the relevant nodes.
 
-![A screenshot IMAGE – AABIT.jpg](media/6e66a95340ee9afe3d711b9941c545d3.jpg)
+![A screenshot IMAGE – AABIT.jpg](media/AABIT.jpg)
 
 **Template 2** Budget tree without accounts.
 
-![A Screenshot IMAGE – AABIT2.jpg](media/c28cd897162dcd58e59d73992e34fb59.jpg)
+![A Screenshot IMAGE – AABIT2.jpg](media/AABIT2.jpg)
 
 A close up of a piece of paper Description automatically generated
 

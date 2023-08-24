@@ -5,9 +5,9 @@ keywords: "receivables"
 author: theley502
 ms.prod: dynamics-gp
 ms.topic: article
-ms.reviewer: edupont
+ms.reviewer: jswymer
 ms.author: theley
-ms.date: 01/28/2019
+ms.date: 08/24/2023
 ---
 
 # Microsoft Dynamics GP Receivables Management Part 5: Utilities and routines
@@ -36,11 +36,12 @@ Reports information is divided into the following sections:
 
 - *Microsoft SQL Server&reg; Reporting Services reports for Receivables Management*
 
-| **Report type** | **Report** | **Printing method** |
+|Report type |Report |Printing method |
 |--|--|--|
 | Setup reports | Customer Setup List </br>Salesperson List </br>Sales Territory List </br>Customer Address List </br>Receivables Setup list </br>Quick Customer Setup List | Choose File \>\> Print in the setup windows or create report options using the Sales Setup Reports window. |
 | Trial Balances | Aged Trial Balance† </br>Aged Trial Balance with Options Aging Report\* </br>Historical Aged Trial Balance\* </br>Quick Aged Trial Balance | Create report options using the Receivables Trial Balance Report Options window. |
 | Analysis reports | Accounts Due Report† | Create report options using the Sales Analysis Report Options window. |
+
 \* Indicates reports that can be printed with multicurrency information displayed. 
 
 Receivables Transactions List†
@@ -59,7 +60,7 @@ You can print several types of reports using Receivables Management. Some report
 
 The following table lists the report types available in Receivables Management and the reports that fall into those categories. Reports printed using Sales Order Processing or Invoicing are printed using many of the same windows. See the Sales Order Processing and Invoicing manuals for more information:
 
-| **Report type**      | **Report**       | **Printing method**         |
+|Report type |Report |Printing method |
 |----------------------|------------------|-----------------------------|
 | Posting journals    | Receivables Posting Journal\*†        | Printed when you post Receivables transactions or create report options using the Sales Posting Journal Options window. |
 | History reports   | Account History Report by Transaction | Create report options using the Sales History Report Options window. |
@@ -70,6 +71,7 @@ The following table lists the report types available in Receivables Management a
 | Edit lists  | Cash Receipts Edit List               | Choose File \>\> Print in the window you use to complete the procedure. |
 | Documents   | Sales/Invoices†                       | Choose Print in the Receivables    |
 | Statements    | Statement forms\*†                    | Choose Print in the Print      |
+
  \* Indicates reports that can be printed with multicurrency information displayed.
 
 Cash Receipts Posting Journal\*†
@@ -247,7 +249,7 @@ Use the Reconcile Receivables Amounts window to compare the aging period amounts
 1. Open the Reconcile Receivables Amounts window. 
 (Sales \>\> Utilities \>\> Reconcile)
 
-![A screenshot of a cell phone Description automatically generated](media/ce91a731d7706f5ec07a80e585ffce6a.jpg)
+![Screenshot of the Reconcile Receivables Amounts window, showing default entries and empty input boxes.](media/ce91a731d7706f5ec07a80e585ffce6a.jpg)
 
 2. Mark which information to reconcile. See *Types of information you can reconcile* for more information.
 
@@ -333,7 +335,7 @@ Use the Remove Receivables Transaction History window to remove transaction hist
 2. Open the Remove Receivables Transaction History window. 
 (Sales \>\> Utilities \>\> Remove Transaction History)
 
-    ![A screenshot of a cell phone Description automatically generated](media/44dff2a477eb56b6647eea009ec07665.jpg)
+    ![Screenshot of the Remove Receivables Transaction History window, showing default entries and empty input boxes.](media/44dff2a477eb56b6647eea009ec07665.jpg)
 
 3. To limit the historical records to be removed, select a type of range and enter a range restriction.
 
@@ -568,7 +570,7 @@ Unapplied Credit Amounts in the Receivables Management Setup window.
 
 1. Open the Receivables Aging Process window. (Sales \>\> Routines \>\> Aging)
 
-    ![A screenshot of a cell phone Description automatically generated](media/3a9ea125e5a594587a96f67780448078.jpg)
+    ![Screenshot of the Receivables Aging Process window, showing default entries and empty input boxes.](media/3a9ea125e5a594587a96f67780448078.jpg)
 
 1. Enter the date to be used for determining the age of a document. This date
     is compared to either the due date or document date, depending on the
@@ -725,7 +727,7 @@ page 82 for more information on individual finance charges.
 1. Open the Assess Finance Charges window. (Sales \>\> Routines \>\> Finance
     Charge)
 
-    ![A screenshot of a cell phone Description automatically generated](media/3b30a34e701e5595e62802b20f6a3f22.jpg)
+    ![Screenshot of the Assess Finance Charges window, showing default entries and empty input boxes.](media/3b30a34e701e5595e62802b20f6a3f22.jpg)
 
 1. Select a range of customer cards to assess finance charges for.
 
@@ -874,7 +876,7 @@ statement ID, change the dates if necessary, and begin printing.
 1. Open the Print Receivables Statements window. (Sales \>\> Routines \>\>
     Statements)
 
-    ![A screenshot of a cell phone Description automatically generated](media/a067d13d4cbdffd28515a179b7544686.jpg)
+    ![Screenshot of the Print Receivables Statements window, showing default entries and empty input boxes.](media/a067d13d4cbdffd28515a179b7544686.jpg)
 
 1. Enter or select a statement ID and enter a description. For example, if you
     want to print statements for your open item customers, you can enter Open
@@ -929,7 +931,7 @@ also can include individual child statements.
 2. To create a message, choose Messages to open the Sales Statement Message
     Entry window.
 
-    ![A screenshot of a social media post Description automatically generated](media/a549a0d9e2e4a8b1d28d7ecd46ca4cde.jpg)
+    ![Screenshot of the window, showing example descriptions, including Finance Charges, NSF Check Charge, and Current. There is one example message that states, finance charges for 1%.](media/a549a0d9e2e4a8b1d28d7ecd46ca4cde.jpg)
 
 Using this window, you can enter your own message. Each of the situations in
 the description column can have its own message and is printed on any
@@ -1129,7 +1131,7 @@ Statements)
 2. Choose E-mail Options to open the E-mail Statements Options or E-mail
     Reprint Statements Options window.
 
-    ![A screenshot of a cell phone Description automatically generated](media/e755fb09b00080dfe7eadc23c24d9075.jpg)
+    ![Screenshot of the window, showing selections of send email customer statements and long form.  Statement is entered in the email subject line.](media/e755fb09b00080dfe7eadc23c24d9075.jpg)
 
 1. Mark one of the following options:
 
@@ -1238,6 +1240,48 @@ checks.*
 3. Choose Process to remove the selected transactions. The report is printed if
     you chose to print it.
 
+#### Multicurrency and Paid Transaction Removal
+
+The purpose of this section is steps on how to fix an issue that may occur with multicurrency invoices in receivables that pop up with an extra 0.01 in the functional currency balances. 
+This specific solution is necessary when Paid Transaction Removal (PTR) has been run against the affected documents and are no longer available to move from history to open. 
+This may occur with sales invoices that are built as multicurrency and shows a 0.01 cent balance on HATB for sales on that transaction.  
+
+IMPORTANT! Remember to test this solution first against a [test version of your live data](http://support.microsoft.com/kb/871973). 
+
+What you need: 
+1.	Access to Microsoft SQL server 
+2.	The invoice document number 
+3.	The All-RM script, contact support if you do not have this.
+4.	The APFRMAPLYAMT
+
+1. Run the All-RM script against the invoice 
+-The Key table to look at is table RM30201, the RM Apply history Table.  
+First, take a look at the columns APPTOAMT and APFRMAPLYAMT. This is the apply credit and apply debit columns for how the document was applied. These should be the same, and you are looking for the row where they are not. Take note of APFRMAPLYAMT and APPTOAMT that value will be needed later.  
+Second, look at APFRDCNM and APFRDCTY on the same row as the non-matching entries from the previous step. This will tell you the name of the document, and what kind of document is affecting the invoice. Typically, it will be a credit memo, a 7 in APFRDCTY. If it is another type of document, this may be a different issue.  
+
+2. Take the Doc number and Doc type from step 1 and plug it into the All-RM script.  
+This is to confirm that certain tables have values that match our circumstances.  
+a.	On table RM30101, ORTRXAMNT should equal APFRMAPLYAMT from step 1.  
+b.	On table RM30201, APPTOAMT should match what you saw in step 1. 
+c.	On table RM30301, DEBITAMT and CRDAMNT should equal the value of APFRMAPLYAMT from step 1.  
+
+3. Once you have confirmed the key info in Step 1 and 2, use it to fill out the script and execute the following against test version of your data: 
+update RM30101 set ORTRXAMT = (ORTRXAMT+0.01) where DOCNUMBR = 'document you found in step1' 
+update RM30201 set APPTOAMT = (APPTOAMT+0.01) where APFRDCNM = 'document you found in step 1' 
+update RM30301 set DEBITAMT = (DEBITAMT+0.01) where DOCNUMBR = 'document you found in step 1' and DEBITAMT = the value of APFRMAPLYAMT 
+  
+update RM30301 set CRDTAMNT = (CRDTAMNT+0.01) where DOCNUMBR = ''document you found in step 1' and CRDTAMNT = the value of APFRMAPLYAMT 
+ 
+4. Run the HITB and check if the 0.01 cent balance has been removed.  
+If your balance hasn’t changed, run the ALL RM against the invoice. Check if the Apply table has changed as intended. If not, confirm your update statement has the correct values and names and run again.  
+If your balance has gone from 0.01 to 0.02, it is possible the wrong row was selected in step 1, part 2. If so, roll back the change and try again.  
+
+5. Test this solution on your live data. Make sure you backup live data first! 
+Documentation on how to backup SQL
+[Quickstart: Back up & restore database with SSMS - SQL Server | Microsoft Learn](https://learn.microsoft.com/en-us/sql/relational-databases/backup-restore/quickstart-backup-restore-database?view=sql-server-ver16&tabs=ssms) 
+ 
+If you run into any questions or issues with using this solution, please execute the All-RM script of the invoice in question and open a case with Microsoft support.  
+
 ### Printing a VAT return
 
 Use the VAT Return window to print VAT reports to submit to the government.
@@ -1250,7 +1294,7 @@ You can save VAT report IDs and reprint reports at a later time.
 1. Open the VAT Return window. (Administration \>\> Routines \>\> Company \>\>
     VAT Return)
 
-    ![A screenshot of a social media post Description automatically generated](media/a3eca87112499476983c71cd6f53a317.jpg)
+    ![Screenshot of the VAT Return window, showing default entries and empty input boxes.](media/a3eca87112499476983c71cd6f53a317.jpg)
 
 1. Enter or select a report ID.
 
@@ -1408,7 +1452,7 @@ have a current backup, you can restore information, if necessary.
 1. Open the Receivables Year-End Closing window. (Sales \>\> Routines \>\>
     Year-End Close)
 
-    ![A screenshot of a cell phone Description automatically generated](media/575bde0d83376ccf27fee01112f9e355.jpg)
+    ![Screenshot of the window, showing the selection All for Year to Close. The Print Report box is checked.](media/575bde0d83376ccf27fee01112f9e355.jpg)
 
 1. Mark Calendar or, if the calendar year coincides with your fiscal year, mark
     All. If they don't coincide, close the fiscal year separately. See *Closing

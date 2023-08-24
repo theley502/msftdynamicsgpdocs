@@ -1,12 +1,12 @@
 ---
 title: "Invoicing in Dynamics GP - Part 3"
-description: "Examine how the Invoicing module works in Microsoft Dynamics GP."
+description: "Learn how the Invoicing module works in Microsoft Dynamics GP with part three of this walkthrough, which covers transaction activity."
 keywords: "invoicing"
 author: theley502
-manager: edupont
+manager: jswymer
 ms.prod: dynamics-gp
 ms.topic: article
-ms.reviewer: edupont
+ms.reviewer: jswymer
 ms.author: theley
 ms.date: 07/13/2020
 ---
@@ -169,7 +169,7 @@ refer to the Receivables Management documentation.
 
     IMAGE - INVCOME.jpg
 
-    ![Screenshot](media/889aa564c305239ce95705b11812c921.jpg)
+    ![Screenshot of the Invoice Commission Entry window.](media/INVCOME.jpg)
 
 2. Choose the hide and show button to expand the scrolling window.
 
@@ -262,10 +262,10 @@ You can't delete an invoice or return if:
 ### Entering Intrastat statistics
 
 Intrastat is the system for collecting statistics on the trade of goods
-between European Union (EU) countries. Intrastat data is required for all
+between European Union (EU) countries/regions. Intrastat data is required for all
 items either bought from EU vendors or sold to EU customers, and must be
 provided on a monthly basis. Requirements for Intrastat are similar in all
-EU countries. The government uses these statistics as an economic indicator.
+EU countries/regions. The government uses these statistics as an economic indicator.
 
 For information on setting up Intrastat codes, see the System Setup Guide
 (Help \>\> Contents \>\> select Setting up the System).
@@ -295,9 +295,9 @@ marked in the Company Setup Options window.*
     button to open the Invoice Customer Detail Entry window and mark EU
     Transaction.
 
-    If the country/region code assigned to the customer's shipping address is designated an EU country, this is marked automatically.
+    If the country/region code assigned to the customer's shipping address is designated an EU country/region, this is marked automatically.
 
-    ![A screenshot IMAGE - INVINE.jpg](media/56c495143606260b358edb18bdab928f.jpg)
+    ![Screenshot of the Invoice Intrastat Entry window](media/INVINE.jpg)
 
 4. Enter Intrastat information, or change the default entries, if necessary.
 
@@ -581,7 +581,7 @@ requirements, see *Creating a batch*.
 
 1. Open the Sales Series Posting window. (Transactions \>\> Sales \>\> Series Post)
 
-    ![Screenshot INVSALP.jpg](media/5707e44a41ccfca2721eb419bc1db795.jpg)
+    ![Screenshot of the Sales Series Posting window.](media/INVSALP.jpg)
 
 2. Set display options. You can display all Sales series batches or only those that have been marked. Choose the show button to display information about the user who created or last marked a batch for posting, comments entered for each batch, and additional information.
 
@@ -617,7 +617,7 @@ option and entered a batch approval password using the Posting Setup window.
 1. Open the Master Posting window. (Microsoft Dynamics GP menu \>\> Tools \>\>
     Routines \>\> Master Posting)
 
-    ![INVMP.jpg](media/496f5b7262fb001a23d01d1c21a3fa4d.jpg)
+    ![Screenshot of the Master Posting window.](media/INVMP.jpg)
 
 2. Set display options. You can list batches by batch ID, origin, or frequency.
     You also can display all batches, those that have been marked, or those for

@@ -3,12 +3,12 @@ title: "Paid Time Off Manager in Dynamics GP"
 description: "Examine how Paid Time Off Manager works with Microsoft Dynamics GP Payroll."
 keywords: "payroll"
 author: theley502
-manager: edupont
+manager: jswymer
 ms.prod: dynamics-gp
 ms.topic: article
-ms.reviewer: edupont
+ms.reviewer: jswymer
 ms.author: theley
-ms.date: 02/05/2019
+ms.date: 12/27/2021
 ---
 
 # Microsoft Dynamics GP Paid Time Off Manager
@@ -149,11 +149,35 @@ Paid Time Off Manager is set up for each individual company, and Paid Time Off M
 
 To open the PTO Options window, click the **HR and Payroll** series button, click **Payroll** on the Setup content pane, click **PTO Manager** and then click **PTO Options**.
 
-![Screenshot](media/PTOOP.jpg)
+![Screenshot that shows the PTO Options window.](media/PTOOP.jpg)
+
+select * from APR_PTO00100 --PTO_Options
 
 Use **Accruals for Employee Based On** to select which hire date the accruals are based on. These button options allow the user to select if he or she wants to base the employee accruals and waiting periods off of the employee **Hire Date** or **Adjusted Hire Date**. This selection affects all employees company-wide.
 
+These dates can be found on the Employee Card:
+
+- Adjusted Hire Date
+
+    Select Adjusted Hire Date to base all employees’ accruals and waiting periods on the employee adjusted hire date.  
+    Note: Using the Adjusted Hire Date is a good option for users who would like to base all employees’ accruals and waiting periods on the same date, such as July 1st.
+
+- Hire Date
+
+    Select Hire Date to base all employees’ accruals and waiting periods on the employee hire date.  
+
+Update Vacation Calendar with Payroll PTO Events
+Select the Update Vacation Calendar with Payroll PTO Events to have the system automatically create an absence entry for the HR Vacation Calendar when a payroll is processed.  The entry will indicate whether the event was for vacation or sick leave. This feature is available only when HR is installed and registered.  
+
+
 Select the **Year End Closing using PTO Utility** check box to process vacation and sick time maximums from the PTO Utilities window for Employee PTO Setup records that are not selected to Calculate on Anniversary Date. Do not select the **Year End Closing using PTO Utility** check box to process vacation and sick time maximums during Payroll Year-End Closing for Employee PTO Setup records that are not selected to Calculate on Anniversary Date.
+
+- If the ‘Year End Closing using PTO Utility’ option is not marked, when the Payroll year is closed, the user will be asked whether or not he/she wants to ‘apply carry over and reset PTO YTD Amounts’:
+
+    - If ‘Continue’ is selected, carry overs will be applied and YTD amounts will be cleared from the Employee PTO Maintenance window.
+    - If ‘Cancel’ is selected, nothing is cleared or applied.
+- If the ‘Year End Closing using PTO Utility’ option is marked, the PTO Utilities window becomes available (Microsoft Dynamics GP >> Tools >> Utilities >> Payroll >> PTO Utilities). This allows users to run the PTO Year End process separately from Payroll Year End. 
+
 
 ### Other Settings Affecting PTO Accruals
 
@@ -193,7 +217,7 @@ Users must select the appropriate check box on the Employee Pay Code Maintenance
 
 Users must select the appropriate check box on the Pay Code Setup window for PTO Manager to accrue for vacation and/or sick time. This must be done for each pay code that is to accrue time. To open this window, click the **HR and Payroll** series button, click **Payroll** on the Setup content pane and then click **Pay Code**.
 
-![Screenshot](media/PTOPCS.jpg)
+![Screenshot that shows the Pay Code Setup window.](media/PTOPCS.jpg)
 
 ### Employee Class Setup Window
 
@@ -203,11 +227,59 @@ When working with employee classes, users must complete the appropriate check bo
 
 Use the PTO Setup window to create setup data to be inherited at the employee level. The system allows the user to save, recall and update multiple PTO Setup records. To open the PTO Setup window, click the **HR and Payroll** series button, click **Payroll** on the Setup content pane and then click **PTO Setup**.
 
-![Screenshot](media/PTOS.jpg)
+![Screenshot that shows the PTO Setup window.](media/PTOS.jpg)
+
+select * from PTO40400 --PTO Code Setup
 
 Enter or select a **PTO Code**. Enter or select the **Vacation and/or Sick Accrual Schedules**.
 
 Select the **Inactive** checkbox to inactivate the PTO Code. If the **Inactive** checkbox is marked, the system will process PTO time based on core Payroll setups.
+
+**Waiting Period**
+If a Waiting Period is being used, accruals move into the ‘Hours Pending’ field on the Employee PTO Maintenance Window and will not move to available or Year-To-Date Accrued Hours field until the Expiration date is met.  
+
+- Recurring
+
+    Mark to indicate the PTO Code has an annual waiting period.  The system will set the expiration date to 01/01 of the next calendar year based on the current user date. 
+- Based on Anniversary Date
+
+    If Recurring is marked the Based on Anniversary Date is enabled.  Mark Based On Anniversary date to set the recurring waiting period to the employees next anniversary date. 
+- Expires
+
+    If the Recurring Waiting Period or Based on Anniversary Date field is unmarked, the Waiting Period Expires field is set to 00/00/0000.
+
+If either the Recurring Waiting Period or Based On Anniversary Date fields are marked, the Waiting Period Expires field is set to either the first of the calendar year or the employee’s anniversary date. When the Waiting Period Expires date is passed, the time is moved from the Pending Field to the available field for the employee, and the Waiting Period Expires date automatically resets to the first of the next calendar year or the employee’s next anniversary date. The resetting of the Waiting Period Expires date takes place during the first pay run after the expiration date.
+
+> [!NOTE]
+> The GP ‘User Date’ at the time of the pay run is utilized to determine the expiration date.  The employee must also be included in the pay run and fall into a valid schedule.
+
+**Carry Over Maximum**
+ 
+- Calculate on Anniversary Date
+
+    Mark to reset the balance to zero on the anniversary date if Allow Carry over is unmarked.  If Allow Carry Over is marked the balance is reset to the maximum allowed.
+- Allow Carry Over
+
+    Mark to enable the Maximum Hours field.  
+- Maximum Hours
+
+    Enter the Maximum Hours to carry over on the anniversary date.
+
+**Anytime Maximum** 
+ 
+- Fixed 
+
+    Mark to indicate the PTO Code has a fixed amount of hours available at any point in time.  
+- Variable 
+
+    Mark to indicate the PTO Code has a variable amount of hours available at any point in time. 
+- Maximum Hours 
+
+    When fixed is marked enter the maximum hours the PTO Code may accrue.  
+- Schedule
+
+    When variable is marked setup the Maximum Schedule and assign to the PTO Code. 
+
 
 ### Setting up Accrual Schedules
 
@@ -220,7 +292,11 @@ Users can create an unlimited variety of schedules. The schedules are implemente
 
 To open the Accrual Schedule Setup window, click the **HR and Payroll** series button, click **Payroll** on the Setup content pane, click **PTO Manager** and then click **Accrual Schedules**.
 
-![Screenshot](media/ASS23.jpg)
+![Screenshot that shows the Accrual Schedule Setup window for viewing accrual schedules.](media/ASS23.jpg)
+
+select * from PTO40100 --PTO Accrual Schedule Header
+select * from PTO40101 --PTO Accrual Schedule Detail
+
 
 Enter a **Schedule Code** and a **Schedule Description**.
 
@@ -228,13 +304,13 @@ Enter a **Schedule Code** and a **Schedule Description**.
 
 Make a selection in the **Range Based On** field. Options include:
 
-- Hours Worked / Pay Period
+- Hours Worked / Pay Period - Select to accrue hours based on the number of hours worked per pay period.
 
-- Hours Worked / Year
+- Hours Worked / Year - Select to accrue hours based on the number of hours worked per pay year.
 
-- Hours Worked Life to Date
+- Hours Worked Life to Date- Select to accrue hours based on the number of hours worked life to date.
 
-- Years Worked
+- Years Worked - Select to accrue hours based on the number of years worked.
 
 Use calculation ranges to determine which calculation factor the system uses in figuring hours accrued. Ranges consist of a beginning and ending value that may represent hours worked or years worked for the calculation factor to be used, and a maximum number of hours that may be earned. From and To values cannot overlap.
 
@@ -246,7 +322,7 @@ It is important to understand each Range Based On option and how it is used to s
 
 Using this selection the Range From and Range To columns represent hours worked per pay period. All hours worked that are eligible for vacation and/or sick time calculations within the pay period are used to determine the range that the employee falls into. As shown in the figure, if the employee worked 13 hours during the pay period, then the calculation factor of 0.02910 is used.
 
-![Screenshot](media/ASSe017.jpg)
+![Screenshot that shows the Accrual Schedule Setup window.](media/ASSe017.jpg)
 
 #### Range Based On: Hours Worked/Year
 
@@ -255,7 +331,7 @@ the current year and has worked 80 eligible hours this pay period, the calculati
 
 Calculation factors are determined based on the organization’s pay schedules, standard hours worked for each pay period, and methods of determining earned hours.
 
-![Screenshot](media/ASS24.jpg)
+![Screenshot of the Accrual Schedule Setup window.](media/ASS24.jpg)
 
 #### Range Based On: Hours Worked Life-to-Date
 
@@ -266,7 +342,7 @@ Using this selection the Range From and Range To columns represent Hours Worked 
 
 The following figure shows that if the employee has worked a total of 10,400 eligible hours since he or she was hired (equivalent to 5 years) and has worked 80 eligible hours this pay period, the calculation factor of 0.05769 must be used.
 
-![Screenshot](media/ASS22.jpg)
+![Screenshot that shows the Accrual Schedule Setup window with the eligible hours.](media/ASS22.jpg)
 
 Calculation factors are determined based on the organization’s pay schedules, standard hours worked for each pay period, and methods of determining earned hours.
 
@@ -274,25 +350,26 @@ Calculation factors are determined based on the organization’s pay schedules, 
 
 Using this selection the Range From and Range To columns represent years worked. The years worked are determined by the difference between the current date and hire date (or if it exists, adjusted hire date). The following figure shows that if the employee has worked a total of 11.5 years (based on the employee’s hire date), the calculation factor of 0.07692 will be used. In this example, the years worked are rounded to 11 years.
 
-![Screenshot](media/ASS23.jpg)
+![Screenshot that shows the Accrual Schedule Setup window with the calculation example.](media/ASS23.jpg)
+
 
 #### Maximum Hours Based On
 
 Make a selection in the **Maximum Hours Based On** field. Options include:
 
-- Per Pay Period -Variable
+- Per Pay Period -Variable - Select to apply a maximum based on a variable amount per pay period.
 
-- Per Year - Fixed
+- Per Year - Fixed - Select to apply a maximum based on a fixed amount per pay period.
 
-- Per Year - Variable
+- Per Year - Variable - Select to apply a maximum based on a variable amount per year. 
 
-- Per Pay Period - Fixed
+- Per Pay Period - Fixed - Select to apply a maximum based on a fixed amount per year. 
 
 #### Maximum Hours Based On: Per Pay Period - Variable
 
 Employees may accrue a maximum number of hours for each pay period based on this calculation range. In the Years Worked example, the first range of years worked allows the employee to earn up to 3.08 hours in an 80 hour pay period (80 Hours \* Calculation Factor of 0.03845 = 3.08). If the employee had worked at the company for ten years, the employee can earn a maximum of 6.15 hours for the pay period.
 
-![Screenshot](media/ASS23.jpg)
+![Screenshot that shows the Accrual Schedule Setup window with the variable pay period example.](media/ASS23.jpg)
 
 #### Maximum Hours Based On: Per Year - Fixed
 
@@ -318,22 +395,41 @@ If a Fixed option is selected for Maximum Hours Based On, a Fixed Maximum Hours 
 
 - **To** - is not allowed to have a lower value than the Range From field. Set the criteria that these range fields are based on. If the schedule below is assigned to an employee that has only worked 23.00 hours in the pay period, he or she is placed in the 20.00 - 29.99 range for that pay period. For this example, the employee’s accrual can change from one pay period to the next based on his or her “Hours Worked/Pay Period.”
 
+> [!NOTE]
+> Occasionally a user will experience unexpected results with their ‘hours pending’ field such as the follwoing: 
+
+- Growing at an unexpected rate, or see available time being greater than expected when the employees waiting period expires. 
+- Reduced at an unexpected rate (possibly resulting in large negative values), or see available time updated with negative amounts when the employees waiting period expires. 
+
+This is because when the ‘Maximum Hours Based On’ is utilizing an Hours Per Year option, GP looks at the ‘Year-To-Date Accrued Hours’ field on the Employee PTO Maintenance Window to determine whether or not the employee has met his/her maximum for the year each time payroll is processed.  
+
+If the employee has a Waiting Period enabled, then the accruals from the schedule are building in the ‘Hour Pending’ field and does not update the Year-To-Date Accrued Hours until the waiting period is over. 
+
+For example, when ‘Year-To-Date Accrued’ is less than the ‘maximum’, then ‘Hours Pending’ will continue to grow. As such, the ‘value’ in ‘Hours Pending’ will ALL become available when the ‘waiting period’ expires (unless utilizing anytime maximums).
+
+Additionally, when ‘Year-To-Date Accrued’ is MORE than the ‘maximum’, then ‘Hours Pending’ will continue to shrink (resulting in negative values). As such, the ‘value’ in ‘Hours Pending’ will ALL become available when the ‘waiting period’ expires. 
+This would result in negative amounts in the ‘Available’ field as well as negative ‘Year-To-Date’ Accrued Hours 
+
+Therefore, if you are using waiting periods, it is recommended that you use an anytime maximum to restrict the number of hours that an employee can have at any given time OR to use a Per Pay Period Maximum and set the Per Pay Period maximum equal to your Yearly Maximum divided by the total pay periods.  
+
+For example:  If the Maximum Hours Per year was 156 and I have biweekly pay runs, I would take 156 hours divided by 26 periods and have a Pay Period Maximum of 6.00 per period.  This would be equivalent to a yearly maximum of 156 hours. 
+
 #### Calculation Factor
 
 Enter the **Calculation Factor.** The **Calculation Factor** is always multiplied by the employees hours worked in the pay period.
 
 > [!NOTE]
-> NOTE: If the employees must earn a set amount each pay run or year, then enter 9.99999 for the calculation factor, and set the Maximum Hours field value to limit the amount to receive.
+> If the employees must earn a set amount each pay run or year, then enter 9.99999 for the calculation factor, and set the Maximum Hours field value to limit the amount to receive.
 
 #### Determining Calculation Factors
 
 Calculation factors are determined based on the organization’s pay schedules, standard hours worked for each pay period, and methods of determining earned hours. In the previous examples, a bi-weekly pay period is used with a standard hours worked for each pay period of 80. In the following window, the calculation factor is determined by simply dividing the Maximum Hours by the To hours worked in the range (0.50 / 19.99= 0.0250). If the employee works 19.99 hours, he or she earns 0.5 hours(19.99 \* 0.025).
 
-![Screenshot](media/ASS32.jpg)
+![Screenshot that shows the Accrual Schedule Setup window and how it determines calculation factors.](media/ASS32.jpg)
 
 The following window shows that the factor is figured by dividing the Maximum Hours per Pay Period by the 2080 (maximum regular time work hours for each year). If an employee consistently works 80 hours each pay period, and he or she has worked a total of 10,400 hours since starting, the factor of 0.05769 is used, and he or she earns 4.62 hours each pay period. Since the employee is paid biweekly, there are a total of 26 pay periods. If the employee earns 4.62 hours every pay period, at the end of the year, he or she has accumulated 120 hours of earned time.
 
-![Screenshot](media/ASS41.jpg)
+![Screenshot that shows the Accrual Schedule Setup window and how the factor is figured.](media/ASS41.jpg)
 
 #### Maximum Hours
 
@@ -389,9 +485,28 @@ The maximum schedule is set up based on Years Worked. When calculating Years Wor
 
 To open the Maximum Schedules Setup window, click the **HR and Payroll Series** button, click **PTO Manager** on the Setup content pane and then click **Maximum Schedules**.
 
-![Screenshot](media/MSS.jpg)
+![Screenshot that shows the Maximum Schedules Setup window.](media/MSS.jpg)
 
 Enter or select a **Schedule Code** and a short **Description**. Enter the **Range From** and **Range To** and **Maximum Hours**.
+
+select * from PTO40200 --PTO Max Schedule Header
+select * from PTO40201 --PTO Max Schedule Detail
+
+The Maximum Schedule Setup window allows the user to create schedules for setting variable maximums. This allows you to set up variations for calculating the maximum amount of vacation or sick time an employee is allowed to have in his or her depository at any time.
+
+The maximum schedule is set up based on years worked. When calculating years worked in the accrual process, the system will first attempt to calculate elapsed time from the adjusted hire date, and then from the hire date.  The maximum amount is an anytime maximum.  
+
+- Maximum Hours
+
+    Enter the maximum hours an employee may have remaining at any given point in time.
+- Years Worked 
+
+    - From
+
+        Enter the start of the range in years.
+    - To
+
+        Enter the end of the range in years.
 
 ### PTO Manager Examples
 
@@ -404,11 +519,11 @@ According to the policies of Fabrikam, Inc., vacation time is subject to a waiti
 To apply this policy, in the Vacation group, under Waiting Period, mark
 Recurring and Based on Anniversary Date.
 
-![Screenshot](media/PTOFTS.jpg)
+![Screenshot of the PTO Setup window.](media/PTOFTS.jpg)
 
 A full-time employee of Fabrikam, Inc. accrues PTO per pay period. The vacation accrual schedule is set to accrue a maximum of 4.62 hours for an employee who has worked 0 to 5 years and 7.69 hours for an employee who has worked 5.01-10 years. This is specified in the Accrual Schedule Setup window (Microsoft Dynamics GP \> Tools \> Setup \> Payroll \> PTO Manager \> Accrual Schedules), as shown in the following illustration.
 
-![Screenshot](media/ASS41.jpg)
+![Screenshot that shows the Accrual Schedule Setup window and how PTO accrues.](media/ASS41.jpg)
 
 To figure the Calculation Factor, calculate the yearly maximum hours divided by the number of hours worked per year. [120 (maximum hours per year) / 2080(hours worked per year) = 0.058)
 
@@ -442,6 +557,54 @@ According to the policies of Fabrikam, Inc., the anytime maximums for vacation s
 
 To apply these policies, in the Vacation group, under Anytime Maximums, select Variable and assign the Maximum Schedule. In the Sick group, under Anytime Maximums, select Fixed and enter the maximum number of hours.
 
+#### Example: Anniversary
+
+Fabrikam runs payroll on a biweekly basis so they have 26 pay periods a year. 
+
+Employees build vacation throughout the year and that vacation becomes available on their anniversary date.  They can have a maximum of 5 hours per pay period (5*26=130 hours per year) if they have been employee from 0 to 4 years.   
+
+Employees who have worked 5 years or more, receive a maximum of 6 hours per pay period (6*26=156 hours per year).  
+They have a carryover maximum of 50 hours and have a waiting period based on anniversary date. 
+Their Anytime Maximum is 180 (130+ 50) hours for employees who have been with the company for 0 to 4 years, and 206 (156+50) hours for 5+ years.  
+
+Their sick time does not have a waiting period, cannot be carried over, and is accrued at a rate of 0.83333 per pay period with an anytime maximum of 20 hours (20 hours per year/26 pay periods = .833333). 
+
+1. For the employee ACKE0001 mark the options to accrue Vacation and Sick Time on their Employee Card (Vac/Sick) button and enter the number of hours that they work in a year. (This should match the number of hours worked per year on the ‘Additional Information’ button on the Employee card as well)  
+
+2. Assign an hourly Paycode such as HOUR to ACKE0001 with a biweekly frequency and with Accrue Vacation and Sick Time Marked.  (You may need to create an hourly pay code if you do not already have one to assign)
+
+3. Assign a vacation Pay Code to ACKE0001 such as VACN, and make sure that it is based on your HOUR pay code from step 2. (In this case we want to still accrue vacation and sick time on our when we use our Vacation so we marked to still accrue on this Pay Code)
+
+4. Assign a sick Pay Code to ACKE0001 such as SICK, and make sure that it is based on your HOUR pay code from step 2. (In this case we want to still accrue vacation and sick time on our when we use Sick Time so we marked to still accrue on this Pay Code)
+
+5. Create an accrual schedule for Vacation.
+
+    - Range Based On: Years Worked
+    - Maximum Hours Based On: Per Pay Period – Variable
+
+    Create a range from 0 to 4.99 years worked.  Since our Yearly Maximum for this range is 130 Hours per year and we have 26 Pay periods, our Pay Period Maximum will be 5 (130 / 26 = 5).   We are on a biweekly frequency, so there are 80 hours per pay period.   In order to accrue a maximum of 5 hours of vacation per pay period, we need a Calculation Factor of 0.06250 (5 / 80 = 0.06250).   
+
+    Create a second range for 5 to 99.99 years worked.   Since our Yearly Maximum for this range is 156 Hours per year and we have 26 Pay periods, our Pay Period Maximum will be 5 (156 / 26 = 6).   We are on a biweekly frequency, so there are 80 hours per pay period.   In order to accrue a maximum of 6 hours of vacation per pay period, we need a Calculation Factor of 0.07500 (6 / 80 = 0.07500).   
+
+6. Create an accrual schedule for Sick.
+
+    - Range Based On: Years Worked
+    - Maximum Hours Based On: Per Pay Period – Variable
+
+    Create a range from 0 to 99.99 years worked.  Since our Yearly Maximum for this range is 20 Hours per year and we have 26 Pay periods, our Pay Period Maximum will be 0.83 (20 / 26 = 0.83).   We are on a biweekly frequency, so there are 80 hours per pay period.   In order to accrue a maximum of 0.83 hours of vacation per pay period, we need a Calculation Factor of 0.01042 (0.8333 / 80 = 0. 01042).   
+
+7. Create an Anytime Maximum
+
+    In this scenario, we only need an Anytime Maximum for Vacation. Create rages based on your ranged based on the years worked from step 5.  Our anytime maximum is our yearly maximum plus what we are allowed to carry over each year (50). For 0 to 4.99 years 180 (130 + 50) and for 5 to 99.99 years 206 (156 + 50).
+
+8. Create a PTO Code in PTO Setup. 
+
+    Enter the Schedules that we created in step 5 and 6 for Vacation and Sick.  For Vacation mark to use a Recurring Waiting Period based on Anniversary date so that our employees will accrue time during the year, and that time will not become available to use until their anniversary date.  Also set to allow up to a maximum of 50 carry over hours to calculate on anniversary date.  Finally set your variable Anytime Maximum Schedule from step 7. 
+
+9. Assign PTO Code to Employee (Cards >> Payroll >> PTO)
+
+10. Process and post a pay run for 80.00 hours for this employee with a User Date that comes before the Expiration Date in the Employee PTO Maintenance Window. 
+
 ### Summary
 
 PTO Manager allows an organization to develop an unlimited number of accrual schedules through the use of ranges, a calculation factor and maximums. Some key points to remember from this chapter include:
@@ -474,7 +637,12 @@ This chapter discusses how to set up an employee to use PTO Manager for accruing
 
 Use the Employee PTO Maintenance window to configure the accrual options for each employee. To open the Employee PTO Maintenance window, click the **HR and Payroll** series button, click **Payroll** on the Cards content pane and then click **PTO**.
 
-![Screenshot](media/PTOEM.jpg)
+![Screenshot that shows the Employee PTO Maintenance window.](media/PTOEM.jpg)
+
+select * from PTO00100 --PTO Payroll Master
+select * from PTO00101 --PTO Pending Master 
+select * from PTO00102 --PTO Anniversary Carry Over
+
 
 In the **Employee PTO Maintenance** window, enter or select an **Employee ID**. Enter or select the **PTO Code**. Enter or select the **Vacation and/or Sick Accrual Schedules**.
 
@@ -526,6 +694,29 @@ Processing payroll with PTO Manager installed is no different than the Microsoft
 
 To open this window, click the **HR and Payroll** series button, click **Payroll** on the Cards content pane, click **Employee**, and then click the **Vac/Sick** button.
 
+The GP User Date (in the lower left corner of GP) is the date used for Ranges, Expirations, and Maximums. Be sure to set this accordingly before processing your pay run.
+
+1. When the pay run is built, GP totals the hours worked for pay codes that are set to accrue vacation/sick.
+
+    Helpful scripts:
+    SELECT UNTSTOPY, ACRUSTIM, ACRUVACN, * FROM UPR10203 WHERE EMPLOYID = 'XXX'
+    SELECT SUM(UNTSTOPY) FROM UPR10203 WHERE EMPLOYID = 'XXX' AND ACRUVACN = '1'
+    SELECT SUM(UNTSTOPY) FROM UPR10203 WHERE EMPLOYID = 'XXX' AND ACRUSTIM = '1'
+2. GP determines which ‘Range’ the employee falls into based on the schedule using their hire or adjusted hire date in comparison to the GP User Date. 
+
+3. GP multiplies the employees’ total hours by the calculation factor on the accrual schedule assigned to the employee.
+4. GP looks at the ‘Maximums’ assigned in the accrual schedule.  For a Pay Period Max, GP will restrict the accrued time for the pay period down to the maximum if needed.  For Yearly Maximums, GP looks at the ‘Year-To-Date Accrued Hours’ on the Employee PTO Maintenance card to determine how many hours can be accrued for this period.  
+
+    Note:  If you are using Waiting Periods, your hours go into the Hours Pending field in Employee PTO Maintenance, and not the Year-To-Date Accrued Hours field.  The Hours Pending field is not looked at for maximums.   If you are going to use waiting periods, it is best practice to use Per Pay Period Maximums, rather than Per Year Maximums on your Accrual Schedule. This ensures a restriction will occur before amounts update Hours Pending
+
+5. Once the number of hours to accrue is calculated, GP checks to see if the employee’s expiration date is on or before the GP User Date.  
+
+    - If there is no Waiting Period set up for the employee, then the accrued hours move directly to the Hours Available and Year-To-Date Accrued Hours fields. 
+    - If there is an expiration date present and it is on or before the GP User Date, all of your Pending Hours (including the hours accrued in the current pay run) will move from Hours Pending, to Available and Year-To-Date Accrued Hours.  
+    - If you allow Carry Over, then the amount (up to the Carry Over Maximum) will remain Available in addition to amounts described in the previous bullet point.  
+    - If there is an expiration date present, but it is not met (GP user date falls after expiration date), then the accrued hours go into the Hours Pending field. 
+6. If an Anytime Maximum is set, the Available amounts will be reduced to ensure ‘available amounts’ are never over the Anytime Maximum amount assigned. 
+
 ### Voiding Checks
 
 If checks are voided for any employees that use PTO Manager and have accrued vacation or sick time on the specified pay run, the accrued time is backed out of the employee’s balance by a reversing entry.
@@ -563,7 +754,7 @@ The PTO Liabilities Report provides administration the opportunity to view any d
 
 To open the PTO Report Options window, click the **HR and Payroll** series button, click **Payroll** on the Reports content pane and then click **PTO**.
 
-![Screenshot](media/PTORE.jpg)
+![Screenshot that shows the PTO Report Options window.](media/PTORE.jpg)
 
 The criteria to set up this report states that employees must be assigned at least one accrual schedule and must have one pay code marked as a Primary Pay Code on the Employee Pay Code Maintenance window. When creating a PTO Report Option, the user has the flexibility to calculate liability (in hour and dollar amounts) for Vacation and/or Sick time. Liabilities can also be calculated by accrual schedule, in other words, only for employees with the selected accrual schedules assigned to them.
 
@@ -578,9 +769,35 @@ After the PTO Report Option is set up and the report is printed, the system will
 
 The PTO Utilities window is used to process the year-end information for the paid-time-off accruals. To open the PTO Utilities window, click the **HR and Payroll** series button, click **Payroll** on the Utilities content pane and then click **PTO Utilities**.
 
-![Screenshot](media/PTOUT.jpg)
+![Screenshot that shows the PTO Utilities window.](media/PTOUT.jpg)
 
 Click the **Process** button. Once Process is selected, the system checks every marked employee to allow carry over and verifies that each employee has hours that are less than or equal to the Maximum Hours Allowed. This process also resets the Year-To-Date Accrued Time fields on the Employee PTO Setup window to zero. This utility allows the company to perform the PTO Year End process at a time consistent with their business requirements.
+
+### PTO Detail Inquiry 
+
+Cards >> Payroll >> PTO – Go To >> PTO Detail
+select * from PTO30100  --PTO Transaction 
+
+The PTO Detail Inquiry displays accruals that have occurred for an employee.   Keep in mind that if you have a Waiting period, your accruals are still pending until your expiration date, therefore it will not show up in this window, until your pending time becomes available. 
+ 
+### PTO Adjustment Entry Window
+
+Cards >> Payroll >> PTO – Go To >> PTO Adjustment
+
+You can make adjustments to Available time, PTO Transaction Detail, or Both from this window.  These do not update your Year-To-Date Accrued Hours or hours Pending so that would need to be edited manually if needed.   
+
+Employee Available Balance Only
+
+- This option will create an adjustment to the Vacation Available or Sick Available balance in Employee PTO maintenance (also seen in upper right corner of PTO Detail Inquiry) It also creates a transaction detail record for visibility purposes. *However, this record is excluded from the PTO Exception Report calculation as it does not factor into the running transaction totals for PTO events. 
+
+PTO Transaction Detail Only 
+
+- This option will create a transaction detail record but WILL NOT affect the Vacation Available or Sick Available balance in Employee PTO maintenance (also seen in upper right corner of PTO Inquiry) The amount will be included in the PTO Exception Report calculation.
+
+Both Balance and Detail 
+
+  - Both Balance and Detail: This option will create a detail transaction as described above and will ALSO create an adjustment to the Vacation Available or Sick Available balance in Employee PTO maintenance (also seen in upper right corner of PTO Inquiry)
+
 
 ### Summary
 

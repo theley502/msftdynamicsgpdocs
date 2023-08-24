@@ -5,9 +5,9 @@ keywords: "payables"
 author: theley502
 ms.prod: dynamics-gp
 ms.topic: article
-ms.reviewer: edupont
+ms.reviewer: jswymer
 ms.author: theley
-ms.date: 11/22/2021
+ms.date: 11/30/2022
 ---
 
 # Microsoft Dynamics GP Payables Management
@@ -220,7 +220,7 @@ Use the Payables Management Setup window to set the default entries that appear 
 1. Open the Payables Management Setup window. 
 (Purchasing \>\> Setup \>\> Payables)
 
-    ![A screenshot](media/1fcb1c9315f92b4613fe60b385c4682c.jpg)
+    ![Screenshot shows the Payables Management Setup window.](media/1fcb1c9315f92b4613fe60b385c4682c.jpg)
 
 2. Specify the aging periods to use. See *Aging periods* for more information.
 
@@ -253,7 +253,7 @@ Use the Payables Setup Options window to set up the options that appear througho
 1. Open the Payables Setup Options window. 
 (Purchasing \>\> Setup \>\> Payables \>\> Options button)
 
-    ![A screenshot](media/460a1ef1bca30addce42fb893d5243f7.jpg)
+    ![Screenshot shows the Payables Setup Options window.](media/460a1ef1bca30addce42fb893d5243f7.jpg)
 
 2. Specify default transaction descriptions and codes. The transaction description is displayed on reports. Use the transaction code when there isn’t room for the entire transaction description on reports or in windows.
 
@@ -464,7 +464,7 @@ Once you decide the most appropriate numbering system, be sure that all the IDs 
 1. Open the Vendor Maintenance window. 
 (Purchasing \>\> Cards \>\> Vendor)
 
-    ![A screenshot of a social media post Description automatically generated](media/21348fdcccb7ebee1793a144b7549fe1.jpg)
+    ![Screenshot shows the Vendor Maintenance window.](media/21348fdcccb7ebee1793a144b7549fe1.jpg)
 
     Some fields in the window will have default values. Some default values are the same for all vendor information, but others come from the vendor class information entered in the Vendor Class Setup window and the Vendor Class Accounts Setup window. Refer to the table for more information.
 
@@ -800,7 +800,7 @@ If you’re using Multicurrency Management, amounts in this window are displayed
 1. Open the Vendor Credit Summary window. 
 (Purchasing \>\> Cards \>\> Summary)
 
-    ![A screenshot of a social media post Description automatically generated](media/ff5ad220959626dfb33449db1b6de077.jpg)
+    ![Screenshot shows the Vendor Credit Summary window.](media/ff5ad220959626dfb33449db1b6de077.jpg)
 
 2. Enter or select a vendor ID.
 
@@ -2128,7 +2128,7 @@ If you are using vendor approval workflow, vendors must have the workflow status
 1. Open the Edit Payables Checks Batch window: 
 (Purchasing \>\> Transactions \>\> Select Checks \>\> Edit Check Batch button)
 
-    ![A screenshot of a social media post Description automatically generated](media/ae10e55f7f43a94870f8f573b491600d.jpg)
+    ![Screenshot shows the Edit Payables Checks Batch window.](media/ae10e55f7f43a94870f8f573b491600d.jpg)
 
 2. Mark a vendor in the Vendors list to include a payment to that vendor in the check batch. To remove all the payments for a vendor, unmark the check box for that vendor in the Vendors list.
 
@@ -2947,7 +2947,7 @@ Use the Customer/Vendor Relationships window to link a customer to a vendor or a
 1. Open the Customer/Vendor Relationships window.
 (Purchasing \>\> Cards \>\> Customer/Vendor)
 
-    ![A screenshot of a social media post Description automatically generated](media/3f06bed41c387c8ea549618091fa1dea.jpg)
+    ![Screenshot shows the Customer/Vendor Relationships window.](media/3f06bed41c387c8ea549618091fa1dea.jpg)
 
 2. Enter or select a vendor and a customer. You can create more than one customer/vendor relationship at a time in this window by entering multiple customers and vendors.
 
@@ -3476,7 +3476,7 @@ All the inquiry windows except for the Payables Summary Inquiry window use links
 
 3. Select a transaction in the scrolling window and choose the Unapplied Amount link. The Payables Apply Zoom window opens. Choose OK to close the window when you finish.
 
-    ![screenshot](media/04b75579f86ed98831aafdcf25aac3a1.jpg)
+    ![Screenshot shows the Payables Apply Zoom window.](media/04b75579f86ed98831aafdcf25aac3a1.jpg)
 
 If you receive an error message when going into a Payables Inquiry window such as:
 'Cannot insert the value NULL into column 'DOCTYABR', table 'tempdb.dbo.'
@@ -4183,7 +4183,7 @@ Choose the Receivables Options button to open the Checkbook EFT Receivables Opti
 
 #### Checkbook setup for Direct Debits and Refunds
 
-If you’re using Direct Debits and Refunds, be sure to set up the company checkbook for direct debits and refunds by choosing Cards >> Financial >> Checkbook. All the refunds will be debited from this checkbook. You can collect funds only if the country format for the company checkbook and the debtor’s bank account is same.
+If you’re using Direct Debits and Refunds, be sure to set up the company checkbook for direct debits and refunds by choosing Cards >> Financial >> Checkbook. All the refunds will be debited from this checkbook. You can collect funds only if the country/region format for the company checkbook and the debtor’s bank account is same.
 
 
 ### EFT file format setup
@@ -4284,23 +4284,20 @@ You can use any of the following calculations. The calculations often are locate
 
 Format options are available when the file format is mapped to data or to calculations that are related to money and dates. 
 
-
-| **Calculation**                           | **Description**                                                                |
-|-------------------------------------------|--------------------------------------------------------------------------------|
-| Addenda record indicator                  | 0 or 1 depending on whether the addenda record type is defined for the format. |
-| Batch count                               | The number of batches in the file.                                             |
-| Block count                               | The number of physical blocks in the file, including the file header           |
-                                                 and the file control records. A block contains 940 characters.              |
-| Hash total                                | Each detail record is hashed to provide a check against inadvertent            |
-                                                 alteration of data contents.                                                |
-| Detail count                              | Total number of detail lines in the file.                                      |
-| Addenda count                             | Total number of addenda lines for each detail line.                            |
-| Line Count                                | Total number of lines in the file.                                             |
-| Total credit amount                       | Total amount of all credit lines in the file.                                  |
-| Total debit amount                        | Total amount of all debit lines in the file.                                   |
-| US-NACHA trace number                     | Uniquely identifies each entry with the batch.                                 |
-| Total number of credits                   | Total number of credits in the file.                                           |
-| Total number of debits                    | Total number of debits in the file.                                            |
+|Calculation                  |Description                                                                 |
+|------------------------------------------|---------------------------------------------------------------|
+|Addenda record indicator  |0 or 1 depending on whether the addenda record type is defined for the format. |
+|Batch count               |The number of batches in the file.                                             |
+|Block count               |The number of physical blocks in the file, including the file header and the file control records. A block contains 940 characters.|
+|Hash total                |Each detail record is hashed to provide a check against inadvertent alteration of data contents.|
+|Detail count              |Total number of detail lines in the file.                                      |
+|Addenda count             |Total number of addenda lines for each detail line.                            |
+|Line Count                |Total number of lines in the file.                                             |
+|Total credit amount       |Total amount of all credit lines in the file.                                  |
+|Total debit amount        |Total amount of all debit lines in the file.                                   |
+|US-NACHA trace number     |Uniquely identifies each entry with the batch.                                 |
+|Total number of credits   |Total number of credits in the file.                                           |
+|Total number of debits    |Total number of debits in the file.                                            |
 
 Field formats for dates
 
@@ -4321,11 +4318,12 @@ When you map to an amount field, you have the option of removing the decimal pla
 
 The following table illustrates the change in amounts when the format is changed to remove the two default decimal places. 
 
-|------------------------|----------------|
-|Unformatted amount      | 123.45         |
-|Remove decimal places   | Yes            |
-|Decimal places          | 2              |
-|Formatted amoun         | 12345          |
+|Decimal place formatting | Result  |
+|:------------------------|---------|
+|Unformatted amount       | 123.45  |
+|Remove decimal places    | Yes     |
+|Decimal places           | 2       |
+|Formatted amount         | 12345   |
 
 
 #### Setting up an EFT file format
@@ -4338,7 +4336,7 @@ The following table illustrates the change in amounts when the format is changed
 6.	Choose Import/Export to import or export a file format to use in another company.
 7.	Choose Save to save your changes. 
 
- ![screenshot](media/eftfileformat1.jpg)
+ ![Screenshot shows setting up an EFT file format.](media/eftfileformat1.jpg)
  
 OPTIONAL:
 If you want, insert this additional information in-between the existing steps 5 and 6 to add some info about some of the other newer fields in the above window. 
@@ -4692,6 +4690,10 @@ The footer transmission record type contains information concerning the total nu
 
 *Different banks use different names to refer to the record type of each line, (for example, “footer transmission” may be called “trailer record”). To find out which record type to use, compare the preceding record type descriptions to the specification provided by your bank.*
 
+NOTE: Safe Pay will not pick up a payroll check if the check number is the same as a Voucher number that has been processed through Payables Management as an EFT Payment
+
+NOTE: If you include EFT transactions in the Safe Pay file, the system will add the text '(EFT)' after the payment number.  (Typically EFT transactions are not included in the Safe Pay file since they were uploaded in an electronic file already.  The option to include EFT transactions is not marked by default in the Safe Pay Upload Maintenance window.)  
+
 ### Fields per line
 When creating a bank format you need to know the number of fields per record line. Determining how many fields are on each line depends on the file format, as follows:
 
@@ -4793,33 +4795,25 @@ With the release of Microsoft Dynamics GP 2018 R2, users can now easily tell whe
 
 Additionally, Microsoft Dynamics GP will now throw a warning message when a user attempts to enter a transaction when the vendor is on hold, "Vendor XXXX is currently on hold. Do you want to continue?"
 
-[Checkbook ID Defaults on Computer Check Batch](https://community.dynamics.com/gp/b/dynamicsgp/posts/microsoft-dynamics-gp-2018-r2-checkbook-id-defaults-on-computer-check-batch)
-
-With the release of Microsoft Dynamics GP 2018 R2, when a Computer Check batch is created from any Payables Payment window, the Checkbook ID will default into the appropriate field in the Payables Batch Entry window.
-
-In prior versions of Microsoft Dynamics GP, when a Payables batch is created with a 'Computer Check' origin, the default Checkbook ID does not default into the Payables Batch Entry window.
-
 [Long Description Field on Payables Transaction Entry](https://community.dynamics.com/gp/b/dynamicsgp/posts/microsoft-dynamics-gp---long-description-field-on-payables-transaction-entry-1531554908)
 
-With the release of Microsoft Dynamics GP 18.2 October 2019, In the Payables Setup, you now have the option of enabling a longer description field for the Payables Transaction Entry window.  
+In the Payables Setup, you now have the option of enabling a longer description field for the Payables Transaction Entry window.  Marking this option in setup will enable a new field called long description to the Payables Transaction Entry window that will also be viewable when inquiring on the transaction.  The traditional description field will hold a maximum of 30 characters, where the long description field will hold up to 200 characters. 
 
-Marking this option in setup will enable a new field called long description to the Payables Transaction Entry window that will also be viewable when inquiring on the transaction.  The traditional description field will hold a maximum of 30 characters, where the long description field will hold up to 200 characters. 
-
-[Visual Cue for EFT Vendor on Edit Payment Batch] (https://community.dynamics.com/gp/b/dynamicsgp/posts/microsoft-dynamics-gp---visual-cue-for-eft-vendor-on-edit-payment-batch)
+[Visual Cue for EFT Vendor on Edit Payment Batch](https://community.dynamics.com/gp/b/dynamicsgp/posts/microsoft-dynamics-gp---visual-cue-for-eft-vendor-on-edit-payment-batch)
 
 With the release of Microsoft Dynamics GP 18.2 October 2019, A new visual cue has been added to the Edit Payment Batch window to show if a Vendor is set up for EFT.  This will be a huge time saver for those who have many Vendors and cannot remember which ones are set up for EFT or not.  Now you can tell right away and can avoid the warning message stating that the Vendor is not set up for EFT if you would accidently select a non-EFT Vendor in this window.
 
-[Non-Employee Compensation - NEC - for 1099 form] (https://community.dynamics.com/gp/b/dynamicsgp/posts/non-employee-compensation-nec-for-1099-form)
+[Non-Employee Compensation - NEC - for 1099 form](https://community.dynamics.com/gp/b/dynamicsgp/posts/non-employee-compensation-nec-for-1099-form)
 
 With the release of Microsoft Dynamics GP 18.3 October 2020, The IRS is releasing a new 1099 NEC form for the 2020 tax year. Non-Employee Compensation, which had been included in the 1099 MISC form, has been moved to its own form.
 
 In the Vendor Card in Options, you now have the option of selecting Non-employee Compensation as a 1099 tax type. The Utility "Update 1099 Information" also includes selecting Non-employee Compensation.
 
-[Add DBA Name field on Vendor Maintenance window for 1099 Vendors] (https://community.dynamics.com/gp/b/dynamicsgp/posts/add-dba-name-field-on-vendor-maintenance-window-for-1099-vendors)
+[Add DBA Name field on Vendor Maintenance window for 1099 Vendors](https://community.dynamics.com/gp/b/dynamicsgp/posts/add-dba-name-field-on-vendor-maintenance-window-for-1099-vendors)
 
 With the release of Microsoft Dynamics GP 18.3 October 2020, When a business is created in the United States or Canada many times, they have the option of using a DBA, or “Doing Business As” name, in addition to the legal entity name. The DBA name is the operating name of the business, or how the business is known to customers, or operating name. As opposed to the legal name of the business. Vendors that have a DBA name, in addition to the legal company name, and want to have the DBA name appear on the 1099 that is issued to them, can now do so.
 
-[1099-MISC form updates for Tax Year 2020] (https://community.dynamics.com/gp/b/dynamicsgp/posts/1099-misc-form-updates-for-tax-year-2020)
+[1099-MISC form updates for Tax Year 2020](https://community.dynamics.com/gp/b/dynamicsgp/posts/1099-misc-form-updates-for-tax-year-2020)
 
 With the release of Microsoft Dynamics GP 18.3 October 2020, The 1099-MISC form has been revised to meet the IRS regulatory changes for the 2020 tax year. In the Vendor Card point to Options, point to Tax Type: Miscellaneous, point to 1099 Box, click the drop-down menu.
 
@@ -4837,32 +4831,30 @@ Box 7 was moved to the 1099 NEC form as a checkbox Payer made Direct Sales of $5
 
 Box 16 the state number is not a currency field and it is available at the header level of the 1099 details window. Therefore, the data entered in the header will be shown in the form.
 
-[Copy and Paste Purchasing Transactions and Distributions] (https://community.dynamics.com/gp/b/dynamicsgp/posts/copy-and-paste-purchasing-transactions-and-distributions)
+[Copy and Paste Purchasing Transactions and Distributions](https://community.dynamics.com/gp/b/dynamicsgp/posts/copy-and-paste-purchasing-transactions-and-distributions)
 
 With the release of Microsoft Dynamics GP 18.3 October 2020, Copy and Paste feature enables users to define purchase transactions, along with distributions, and import them into the Payables Transaction entry window in GP. This will improve efficiency, reduce rekeying errors, and enhancement user experience.
 
 With this feature, you can choose to do distributions or not, similar to our General Ledger copy paste.
 
-[Import Credit Card Transactions] (https://community.dynamics.com/gp/b/dynamicsgp/posts/import-credit-card-transactions)
+[Import Credit Card Transactions](https://community.dynamics.com/gp/b/dynamicsgp/posts/import-credit-card-transactions)
 
 With the release of Microsoft Dynamics GP 18.3 October 2020, Importing a credit card statement to a vendor account in Dynamics GP makes it fast and easy to enter invoice transactions. Users can import the credit card transactions as payable invoices or manual payments. Using the import functionality helps reduce the chances of data entry errors and brings invoices for a vendor into a batch.
 
 The imported transactions must be saved as a batch and appropriate distributions must be created for each transaction.
 
-[Remove MC Fully applied documents from PM HATB] (https://community.dynamics.com/gp/b/dynamicsgp/posts/microsoft-dynamics-gp-fall-2020-remove-mc-fully-applied-documents-from-hatb)
+[Remove MC Fully applied documents from PM HATB](https://community.dynamics.com/gp/b/dynamicsgp/posts/microsoft-dynamics-gp-fall-2020-remove-mc-fully-applied-documents-from-hatb)
 
 With the release of Microsoft Dynamics GP 18.3 October 2020, you will now have the ability to remove fully applied Multicurrency documents from your Payables Historical Aged Trial Balance making it easier to focus just on those documents that are outstanding.
 
-[Default Inquiry sort Options] (https://community.dynamics.com/gp/b/dynamicsgp/posts/microsoft-dynamics-gp-october-2021---default-inquiry-sort-options-ap-ar-br)
+[Default Inquiry sort Options](https://community.dynamics.com/gp/b/dynamicsgp/posts/microsoft-dynamics-gp-october-2021---default-inquiry-sort-options-ap-ar-br)
 
 With the release of Microsoft Dynamics GP 18.4 October 2021, When users go into the Inquiry windows with these sorting options, the first thing they most often do is change the sort type to be Document Number or Document Date and select descending, as they want to display the most recent documents.  Now, these sort option settings can be saved as default, saving the user a lot of time when trying to locate transactions.
 
-[Payables 1099 Default to Single Feed] (https://community.dynamics.com/gp/b/dynamicsgp/posts/microsoft-dynamics-gp-october-2021---payables-1099-default-to-single-feed)
+[Payables 1099 Default to Single Feed](https://community.dynamics.com/gp/b/dynamicsgp/posts/microsoft-dynamics-gp-october-2021---payables-1099-default-to-single-feed)
 
 With the release of Microsoft Dynamics GP 18.4 October 2021, When printing 1099's, the form type will default to 'Single Feed' instead of 'Continuous',  saving the user time and hassle from printing the incorrect 1099 form layout.  This default setting can be found by going into Purchasing Routines and selecting Print 1099.
 
-[Payables 1096 form print email address] (https://community.dynamics.com/gp/b/dynamicsgp/posts/microsoft-dynamics-gp-october-2021---payables-1096-form-print-email-address)
+[Payables 1096 form print email address](https://community.dynamics.com/gp/b/dynamicsgp/posts/microsoft-dynamics-gp-october-2021---payables-1096-form-print-email-address)
 
 With the release of Microsoft Dynamics GP 18.4 October 2021, The Payables 1096 Form will print your company's email address for the Address ID which is selected in the Print 1099 window.  Also, that email address will be displayed on the Print 1099 window.  You can locate the 1096 Form by going to Purchasing Routines and selecting Print 1099. 
-
-

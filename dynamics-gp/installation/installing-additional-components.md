@@ -2,15 +2,15 @@
 title: "Add or remove features"
 description: "Customize Dynamics GP by adding or removing functionality."
 keywords: "install"
-author: edupont04
-ms.author: edupont
+author: jswymer
+ms.author: jswymer
 manager: annbe
 applies_to: 
 ms.date: 08/23/2018
 ms.prod: dynamics-gp
 ms.topic: article
 ms.assetid: 3f1d0bb8-4967-4a30-814b-b07c5ea58959
-ms.reviewer: edupont
+ms.reviewer: jswymer
 ---
 
 # Installing additional components
@@ -90,9 +90,9 @@ When you click a button for a feature, a pop-up menu of options appears. Refer t
 
 | Option   | What happens |
 |----------|-------------|
-| ![component icon](media/installed-component.png "Component icon") Run from My computer     | The selected feature will be installed on the local hard disk. (This option installs the feature, but not sub–features.) |  
-| ![component icon](media/installed-component.png "Component icon") Run all from My computer | Will install the feature and all of its sub–features.                                                                    |  
-| ![component icon](media/not-installed-component.png "Component icon") Not available            | Will not install the selected feature or sub–features.                                                                   |  
+| :::image type="icon" source="media/installed-component.png"::: Run from My computer | The selected feature will be installed on the local hard disk. (This option installs the feature, but not sub–features.) |  
+| :::image type="icon" source="media/installed-component.png"::: Run all from My computer | Will install the feature and all of its sub–features. |  
+| :::image type="icon" source="media/not-installed-component.png"::: Not available | Will not install the selected feature or sub–features. |  
 
 After you have specified the feature or features, click Next.
 

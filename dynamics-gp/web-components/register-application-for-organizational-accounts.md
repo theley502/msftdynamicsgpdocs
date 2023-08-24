@@ -2,8 +2,8 @@
 title: "Access for organizational accounts"
 description: "Learn how to give access to Dynamics GP for organizational accounts by adding the applicaiton to their Azure Active Directory."
 keywords: "web components"
-author: edupont04
-ms.author: edupont
+author: jswymer
+ms.author: jswymer
 manager: annbe
 applies_to: 
 ms.date: 09/05/2018
@@ -39,8 +39,6 @@ Use the following steps to register your Dynamics GP web components installation
 3. On the top menu, click Applications. If no apps have been added to your directory, this page will only show the Add an App link. Click on the link, or alternatively you can click on the Add button on the command bar.
 
 4. On the What do you want to do page, click on the link to Add an application my organization is developing.
-
-###
 
 5. On the Tell us about your application page, you must specify a name for your application as well as indicate the type of application you are registering with Azure AD. You will choose the web application and/or web API radio button.
 

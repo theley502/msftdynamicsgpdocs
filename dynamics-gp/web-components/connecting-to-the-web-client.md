@@ -1,9 +1,9 @@
 ---
-title: "Working with Dynamics GP web client"
+title: "Connecting to the Dynamics GP web client"
 description: "Learn how to safely connect to and signing out from Dynamics GP in a browser."
 keywords: "web components"
-author: edupont04
-ms.author: edupont
+author: jswymer
+ms.author: jswymer
 manager: annbe
 applies_to: 
 ms.date: 09/05/2018
@@ -37,7 +37,7 @@ To sign in to the web client, use the following procedure.
 
 2. Enter the URL of the Dynamics GP web client site. The default address of the site is:
 
-    [https://ServerName:PortNumber/GP](https://ServerName:PortNumber/GP)  
+    `https://ServerName:PortNumber/GP`
 
     **ServerName**   is the fully-qualified domain name (FQDN) for the server that is hosting the web site. This name must match the name you used when you requested the security certificate that you applied to the site when setting up SSL.
 
@@ -45,7 +45,7 @@ To sign in to the web client, use the following procedure.
 
     A typical URL to access the Dynamics GP web client looks similar to the following:
 
-    <https://gpuaweb.contoso.com/GP>
+    `https://gpuaweb.contoso.com/GP`
 
 3. View the sign-in page. If the site displays a security certificate error, report the issue to your system administrator, and do not continue the sign on process.
 

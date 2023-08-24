@@ -2,9 +2,9 @@
 title: "Additional features and components upgrade"
 description: "Learn about upgrading additional features or components that you may have purchased to bring specialized functionality to your Dynamics GP."
 keywords: "upgrade"
-author: edupont04
-ms.author: edupont
-manager: edupont
+author: jswymer
+ms.author: jswymer
+manager: jswymer
 applies_to: 
 ms.date: 08/24/2018
 ms.prod: dynamics-gp
@@ -38,21 +38,22 @@ For all countries and regions:
 
 For all countries and regions except Canada and the United States:
 
-| Bank Management      | Scheduled Installments |
-|----------------------|-----------------------|
-| Direct Debit Refunds |                       |
+| Bank Management      | Scheduled Installments  |
+|----------------------|-------------------------|
+| Direct Debit Refunds |                         |
 
 For the United States:
 
-|                                   |     |
-|-----------------------------------|-----|
-| Human Resources and Payroll suite |     |
+| Bank Management      | Scheduled Installments  |
+|----------------------|-------------------------|
+| Human Resources      |                         |
+| Payroll Suite        |                         |
 
 For Belgium and France:
 
-|                       |     |
-|-----------------------|-----|
-| Export Financial Data |     |
+| Bank Management      | Scheduled Installments  |
+|----------------------|-------------------------|
+| Export Financial Data|                         |
 
 ## Adding or removing additional features
 
@@ -80,9 +81,9 @@ To add or remove additional features:
 
 | Option                                                                         | What happens                                                                                                             |
 |--------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|
-| ![component icon](media/installed-component.png "Component icon") Run from My computer     | The selected feature will be installed on the local hard disk. (This option installs the feature, but not sub–features.) |  
-| ![component icon](media/installed-component.png "Component icon") Run all from My computer | Will install the feature and all of its sub–features.                                                                    |  
-| ![component icon](media/not-installed-component.png "Component icon") Not available            | Will not install the selected feature or sub–features.                                                                   |  
+| ![component icon 1](media/installed-component.png "Component icon") Run from My computer     | The selected feature will be installed on the local hard disk. (This option installs the feature, but not sub–features.) |  
+| ![component icon 2](media/installed-component.png "Component icon") Run all from My computer | Will install the feature and all of its sub–features.                                                                    |  
+| ![component icon 3](media/not-installed-component.png "Component icon") Not available            | Will not install the selected feature or sub–features.                                                                   |  
 
 After you have specified the feature or features, click Next.
 

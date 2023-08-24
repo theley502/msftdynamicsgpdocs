@@ -1,9 +1,9 @@
 ---
-title: "What's new in Dynamics GP"
-description: "Learn about enhancements that were added to the product since the release of Dynamics GP 2016 R2. "
+title: "What's new in Dynamics GP 2018"
+description: "Learn about enhancements that were added to the product since the release of Dynamics GP 2016 R2 through 2018. "
 keywords: ""
-author: edupont04
-ms.author: edupont
+author: jswymer
+ms.author: jswymer
 manager: annbe
 ms.date: 10/12/2018
 ms.prod: dynamics-gp
@@ -88,7 +88,7 @@ This enhancement lets you add account descriptions to workflow message that are 
 
 ### Bank used for EFT added to vendor approval workflow
 
-Additional information is now included in the Vendor approval workflow that shows the bank that the vendor uses for electronic funds transfers (EFT). To use the new field, mark it in the Extended fields list option in the Work Maintenance window, and then add it to the workflow in the Workflow Condition Editor. These extended fields are all the EFT banking fields that can be set up on the vendor for EFT information. They include the country, bank name, bank account, and SWIFT code.
+Additional information is now included in the Vendor approval workflow that shows the bank that the vendor uses for electronic funds transfers (EFT). To use the new field, mark it in the Extended fields list option in the Work Maintenance window, and then add it to the workflow in the Workflow Condition Editor. These extended fields are all the EFT banking fields that can be set up on the vendor for EFT information. They include the country/region, bank name, bank account, and SWIFT code.
 
 ### New workflows for new accounts, receipt transactions, and purchasing invoices
 

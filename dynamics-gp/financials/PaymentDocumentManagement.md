@@ -3,11 +3,11 @@ title: "Payment Document Management "
 description: "Payment Document Management "
 keywords: "year-end"
 author: theley502
-manager: edupont
+manager: jswymer
 
 ms.prod: dynamics-gp
 ms.topic: article
-ms.reviewer: edupont
+ms.reviewer: jswymer
 ms.author: theley
 ms.date: 12/1/2019
 
@@ -71,7 +71,7 @@ This information is divided into the following sections:
 
 ### Understanding Payment Document Management
 
-Certain European and Latin American countries deal in payment documents such as bills of exchange or promissory notes, apart from making payments by cash, check and credit cards. Payment Document Management allows users to enter receipts and payments using such payment methods. Payment documents that do not have a due date specified can be settled at any time. However, the documents that have specific due dates can only be settled after the due date. To receive the payment for such documents before the due date, the creditor must submit these documents to a bank or similar entity for collection. The bank then performs a risk assessment to assign a risk level to the debtors. Based on this assessment, the bank decides which documents it will accept. The creditor is then paid the document amount after deducting the commission or discount amount. The bank submits these documents to the debtor on the due date and collects the settlement.
+Certain European and Latin American countries/regions deal in payment documents such as bills of exchange or promissory notes, apart from making payments by cash, check and credit cards. Payment Document Management allows users to enter receipts and payments using such payment methods. Payment documents that do not have a due date specified can be settled at any time. However, the documents that have specific due dates can only be settled after the due date. To receive the payment for such documents before the due date, the creditor must submit these documents to a bank or similar entity for collection. The bank then performs a risk assessment to assign a risk level to the debtors. Based on this assessment, the bank decides which documents it will accept. The creditor is then paid the document amount after deducting the commission or discount amount. The bank submits these documents to the debtor on the due date and collects the settlement.
 
 ### Enabling Payment Document Management
 
@@ -81,7 +81,7 @@ You must enable payment documents before you can start using them in purchasing 
 
 1.  Open the Company Payment Document Management Setup window. (Administration \>\> Setup \>\> Company \>\> Payment Document Setup)
 
-![Screenshot](media/SPDMS.jpg)
+![Screenshot of the Company Payment Document Management Setup window.](media/SPDMS.jpg)
 
 1.  Mark the respective options to enable Payment Document Management for purchasing and sales. The setup windows will be available only for the module/s for which you have marked the required option.
 
@@ -112,7 +112,7 @@ The Purchasing Payment Document Management Setup window allows you to set up def
 1.  Open the Purchasing Payment Document Management Setup window.
     (Administration \>\> Setup \>\> Purchasing \>\> Payment Document Setup)
 
-![Screenshot](media/PPDSET.jpg)
+![Screenshot of the Purchasing Payment Document Management Setup window.](media/PPDSET.jpg)
 
 2.  Select whether to set the General Ledger Entry Level to per Settlement or per Payment Document. If you select per Settlement, all the documents will be posted as a single summary entry. If you select per Payment Document, the payment documents will be posted as a single entry per document.
 
@@ -145,7 +145,7 @@ The Purchasing Payment Document Maintenance window allows you to create and defi
 
 1.  Open the Purchasing Payment Document Maintenance window. (Cards \>\> Purchasing \>\> Payment Document Maintenance)
 
-![Screenshot generated](media/PPDM.jpg)
+![Screenshot of the Purchasing Payment Document Maintenance window.](media/PPDM.jpg)
 
 2.  Enter or select the payment document ID.
 
@@ -168,7 +168,7 @@ You can establish a more specific set up level by selecting the options that wil
 1.  Open the Purchasing Chequebook Payment Document Setup window. (Cards \>\>
     Financial \>\> Chequebook \>\> Additional \>\> Purchasing Pmnt. Doc. Setup)
 
-![Screenshot](media/PCPDS.jpg)
+![Screenshot of the Purchasing Chequebook Payment Document Setup window.](media/PCPDS.jpg)
 
 2.  Enter or select the payment document ID.
 
@@ -249,7 +249,7 @@ The Sales Payment Document Management Setup window allows you to set up default 
 
 4.  Enter or select the accounts for the following fields:
 
-![](media/SPDMS.jpg)
+![Screenshot of the Sales Payment Document Management Setup window.](media/SPDMS.jpg)
 
 **Receive** For cheques received.
 **Risk Assessment** For risk assessing cheques.
@@ -287,7 +287,7 @@ You can create and define payment documents that will be used in sales in the Sa
 
 1.  Open the Sales Payment Document Maintenance window. (Cards \>\> Sales \>\> Payment Document Maintenance)
 
-![Screenshot](media/SPDM01.jpg)
+![Screenshot of the Sales Payment Document Maintenance window.](media/SPDM01.jpg)
 
 1.  Enter or select the payment document ID and enter a description for the document.
 
@@ -318,7 +318,7 @@ The Sales Chequebook Payment Document Setup window allows you to establish a mor
 1.  Open the Sales Chequebook Payment Document Setup window. (Cards \>\>
     Financial \>\> Chequebook \>\> Additional \>\> Sales Pmnt. Doc. Setup)
 
-![](media/SPDMS.jpg)
+![Screenshot of the Sales Chequebook Payment Document Setup window.](media/SPDMS.jpg)
 
 2.  Enter or select a Payment Document ID.
 
@@ -391,7 +391,7 @@ Use the Purchasing Payment Document Entry window to enter a collection transacti
 
 4.  Choose Additional \>\> Payment Document Entry to open the Purchasing Payment Document Entry window.
 
-![A screenshot](media/PPDE1.jpg)
+![Screenshot of the Purchasing Payment Document Entry window.](media/PPDE1.jpg)
 
 5.  The Payment Doc. No. field displays the value entered in the Document No. field in the main Payables window.
 
@@ -414,7 +414,7 @@ You can settle payment documents and identify the origin and destination chequeb
    
 1.  Open the Purchasing Payment Document Settlement window. (Transactions \>\> Purchasing \>\> Payment Document Settlement)
 
-![A screenshot](media/PPDSET.jpg)
+![Screenshot of the Purchasing Payment Document Settlement window.](media/PPDSET.jpg)
 
 1.  Enter a transaction ID for the settlement that you are going to create. For example, you can enter the transaction ID using the settlement date. If the settlement is stored rather than processed, it can be recovered later.
 
@@ -665,7 +665,7 @@ You can view all the collections made with payments documents and the status of 
 
 1.  Open the Sales Payment Document Enquiry window. (Enquiry \>\> Sales \>\> Payment Documents)
 
-![A screenshot](media/SPDENQ.jpg)
+![Screenshot of the Purchasing Payment Document Enquiry window.](media/SPDENQ.jpg)
 
 1.  Select whether you want to view the payment document by Debtor ID, Chequebook ID or Payment Doc. Status.
 

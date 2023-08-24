@@ -1,9 +1,9 @@
 ---
 title: "Manage the logging for Dynamics GP web components"
-description: "Learn how you can troubleshoot Dynamics GP web components."
+description: "Learn how you can troubleshoot Dynamics GP web components with the logging capability provided by the Dynamics GP web client installation."
 keywords: "web components"
-author: edupont04
-ms.author: edupont
+author: jswymer
+ms.author: jswymer
 manager: annbe
 applies_to: 
 ms.date: 09/05/2018
@@ -71,9 +71,9 @@ If you are using the Dynamics GP web client in a single tenant configuration (no
 
 `C:\\Program Files\\Microsoft Dynamics\\GP Web Components\\SessionCentral\\`
 
-The <RuntimeLogEnabled> element in the TenantConfiguration.xml file controls logging for all users of the web client installation. When it has the value true, the runtime log is generated for every web client user.
+The \<RuntimeLogEnabled\> element in the TenantConfiguration.xml file controls logging for all users of the web client installation. When it has the value true, the runtime log is generated for every web client user.
 
-The <CustomRuntimeSettings> element controls whether the other log types are generated. If the setting for the specific log type is set to true, that log will be generated.
+The \<CustomRuntimeSettings\> element controls whether the other log types are generated. If the setting for the specific log type is set to true, that log will be generated.
 
 If logging for a tenant is enabled for an extended time, the quantity and size of the log files generated can become very large. Be sure to disable logging after it is no longer needed.
 

@@ -2,15 +2,15 @@
 title: "Checklist for installation process"
 description: "Quick run-through of the installation process."
 keywords: "install"
-author: edupont04
-ms.author: edupont
+author: jswymer
+ms.author: jswymer
 manager: annbe
 applies_to: 
 ms.date: 08/23/2018
 ms.prod: dynamics-gp
 ms.topic: article
 ms.assetid: 46580577-d8e4-4b25-ab9f-8538bcbb84f7
-ms.reviewer: edupont
+ms.reviewer: jswymer
 ---
 # Installation checklist
 
@@ -23,7 +23,7 @@ Use this checklist as your guide to installing and setting up Dynamics GP
 | Step | For more information, see |
 |------|--------------------------|
 | 1. Plan the security of your system.  | Download the SecurityPlanning.pdf, titled Planning for Security, from the [Download Center](https://www.microsoft.com/en-us/download/details.aspx?id=45025) by expanding the Details option.                     |
-| 2. Refer to the this content for new or updated information relating to the installation. You also can use CustomerSource for additional information. | [https://docs.microsoft.com/en-us/dynamics-gp/](../index.md) |
+| 2. Refer to the this content for new or updated information relating to the installation. You also can use CustomerSource for additional information. | [Dynamics GP documentation](../index.md) |
 | 3. View the Readme file and make a note of the items that pertain to you. | \\Media\\GreatPlains\\Documentation\\GPReadme.chm |
 | 4. Obtain your need registration keys for Dynamics GP.   | Contact your Dynamics GP partner before going to CustomerSource/My Account for registration keys for Dynamics GP. [CustomerSource Help and How-To Resources](/dynamics/s-e/howto) |
 | 5. Verify system requirements. | [Core System Requirements](system-requirements-core.md)   |
@@ -63,7 +63,7 @@ To view and download documentation, visit the [Documentation Resources for Dynam
 
 <!--### CustomerSource
 
-CustomerSource is a Web site for registered Dynamics GP customers. CustomerSource is available 24 hours a day. You must have a user name and password to enter the site. You can access [CustomerSource](https://docs.microsoft.com/dynamics/s-e/) with your Internet browser.
+CustomerSource is a Web site for registered Dynamics GP customers. CustomerSource is available 24 hours a day. You must have a user name and password to enter the site. You can access [CustomerSource](https://learn.microsoft.com/dynamics/s-e/) with your Internet browser.
 
 From the CustomerSource start page, select the Support option. From the Support page, you can look for information on your own or you can use e-mail to send a question to the Dynamics GP Technical Support team.
 
@@ -71,7 +71,7 @@ You'll find links to Support Hot Topics and Knowledge Base—the best source of 
 
 ### Microsoft SQL Server troubleshooting resources
 
-Go to [the section for SQL here on the Docs.microsoft.com site](/sql/?view=sql-server-2017) and find guidance for troubleshooting SQL error messages and other issues related to SQL. Microsoft's web site, [www.microsoft.com](https://www.microsoft.com), is also a good source of information for issues related to SQL or your operating system. You also can download Microsoft SQL Server Management Studio and SQL Server Books Online for Microsoft SQL Server Express Edition.
+Use the [Microsoft SQL documentation](/sql/?view=sql-server-2017&preserve-view=true) to find guidance for troubleshooting SQL error messages and other issues related to SQL. The [Microsoft website](https://www.microsoft.com) is also a good source of information for issues related to SQL or your operating system. You also can download Microsoft SQL Server Management Studio and SQL Server Books Online for Microsoft SQL Server Express Edition.
 
 > [!NOTE]
 > SQL-related error messages appear as DBMS errors in Dynamics GP. Always use the SQL Server Books Online to troubleshoot DBMS errors. Choose the Search tab and enter the error number, then choose List Topics.  
@@ -107,5 +107,3 @@ Verify the version numbers for Dynamics GP, your Microsoft SQL Server, and Micro
 - Does the problem occur at the database server?
 
 - If you use Windows Server 2008 Terminal Server, or Remote Desktop Services, does the same issue happen at the Terminal Server?
-
-

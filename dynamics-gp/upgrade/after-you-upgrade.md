@@ -2,9 +2,9 @@
 title: "After the upgrade"
 description: "Complete the upgrade to Dynamics GP by taking a backup, reconciling financial data, applying security roles, and other important steps."
 keywords: "upgrade"
-author: edupont04
-ms.author: edupont
-manager: edupont
+author: jswymer
+ms.author: jswymer
+manager: jswymer
 applies_to: 
 ms.date: 08/24/2018
 ms.prod: dynamics-gp
@@ -78,12 +78,12 @@ After you upgrade, we recommend printing the following reports to a printer or t
 | General Ledger            | Detailed Trial Balance                                                                                          |
 | Receivables Management    | Aged Trial Balance with Option                                                                                  |
 | Payables Management       | Aged Trial Balance with Option                                                                                  |
-| Inventory Control         | Pricing Reports                                           | 
+| Inventory Control         | Pricing Reports                                           |
 |          |Error Reports|
 |          |Purchase Receipts|
 | Purchase Order Processing | Purchase orders|
  |          | Purchase Order Status Report                                                                                     |
-| Payroll                   | Manual Check Edit| 
+| Payroll                   | Manual Check Edit|
 |          |List Benefit Summary Deduction Summary|
  |          | Department Wage Summary|
 |          |  FUTA Summary |
@@ -98,7 +98,7 @@ After you upgrade, we recommend printing the following reports to a printer or t
  |          |  Form 941 Schedule B |
 |          | Employee Pay History\* | 
 |          | Transaction History Report\*|
-|          |  Check History\*  |                     |
+|          |  Check History\*                       |
 | Manufacturing             | WIP Report |
   |          | Manufacturing Order Summary|
  |          | Standard Cost Pending                                                                                           |
@@ -235,7 +235,7 @@ To create security roles:
 | Select the following tasks | DEFAULTUSER                                                                     |
 |                            | EMP\_TIME\_MANAGER\_001\*                                                       |
 
-| Heading                    |                                                 |
+| Heading                    | Information                                     |
 |----------------------------|-------------------------------------------------|
 | Role ID                    | ESS PTE EMPLOYEE\*                              |
 | Role Name                  | Project Time and Expense Self Service Employee  |

@@ -3,10 +3,10 @@ title: Dynamics GP Service Based Architecture
 description: This provides an introduction for Service Based Architecture in Microsoft Dynamics GP.
 keywords: "SBA"
 author: theley502
-manager: edupont
+manager: jswymer
 ms.prod: dynamics-gp
 ms.topic: article
-ms.reviewer: edupont
+ms.reviewer: jswymer
 ms.author: theley
 ms.date: 10/14/2021
 ---
@@ -29,7 +29,7 @@ The introduction of the Web Client in Microsoft Dynamics GP 2013 paved the way f
 
 Here is an architectural breakdown of the difference:
 
-![Form](media/SBA0001.JPG)
+![Diagram showing the SBA connected to the Dex Process with a stateless connection and the Web client connected with a stateful connection.](media/SBA0001.JPG)
 
 There are two main differences between the Web Client and SBA. The first is that unlike the Web Client which connected directly to the Dex Process, SBA connects to the Dex Process via the GP Service and the Dex Service Controller. 
 
@@ -47,7 +47,7 @@ The following actions can be done with SBA:
 Here is what is exposed to SBA with Dynamics GP 2015 RTM:
 
 - Administration
-  - Countries
+  - Countries/Regions
   - Currencies
   - Payment Terms
 - Companies
@@ -140,7 +140,7 @@ As an example, if Domain\User needs access to create customers through SBA, Doma
 When installing the Web Server role, the following components must be installed:
 
 
-![Form](media/SBA0002.JPG)
+![Screenshot of the Web Server installation window listing the installed and not installed components.](media/SBA0002.JPG)
 
 Next, the web site must have an SSL Certificate bound to it. You can use a Self-Signed certificate, a certificate generated from an Internal Certificate Authority or a Third-Party certificate. There are pros and cons for each so they must be weighed prior to installation.
 Lastly, the web site must be exposed to .Net Framework 4.0. This can be done by expanding aspnet_client on the website and then expanding system_web.

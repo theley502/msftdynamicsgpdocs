@@ -3,6 +3,8 @@
 <!--- what's new-->
 ## What's new
 ### [Introduction](whats-new/introduction.md)
+### What's New in Dynamics GP in October 2022
+#### [October 2022 capability overview](whats-new/version-october-2022.md)
 ### What's New in Dynamics GP in October 2021
 #### [October 2021 capability overview](whats-new/version-october-2021.md)
 ### What's New in Dynamics GP in October 2020
@@ -135,7 +137,7 @@
 ### [Glossary of Terms in Manufacturing](distribution/glossary-manufacturing.md)
 
 ## Installation and administration
-### [Support for Microsoft Dynamics GP](terms/lifecycle.md)
+### [Understand the Lifecycle Policies](terms/lifecycle.md)
 <!--- installation -->
 ### Preparation
 #### [Installation checklist](installation/installation-checklist.md)
@@ -162,6 +164,9 @@
 ### [Security Planning](installation/SecurityPlanning.md)
 ### [System Setup](installation/SystemSetup.md)
 ### [System Administration Guide](installation/SystemAdminGuide.md)
+### [Introduction to Word Templates](installation/word-templates.md)
+### [Workflow Administrator's Guide](installation/Workflow.md)
+### [Dynamics GP on Azure](installation/MicrosoftAzureandGP.md)
 
 <!--- web components -->
 ### Web components
@@ -214,3 +219,5 @@
 #### [Module upgrades from Dynamics GP 2013](upgrade/module-upgrades-from-microsoft-dynamics-gp-2013.md)
 ### [After you upgrade](upgrade/after-you-upgrade.md)
 #### [Company data conversion](upgrade/company-data-conversion.md)
+### Migrate to Dynamics 365 Business Central online
+#### [Compare Work in Dynamics GP to Business Central](upgrade/migrate-gp-bc.md)

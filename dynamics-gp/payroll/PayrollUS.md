@@ -3,12 +3,12 @@ title: "Dynamics GP U.S. Payroll"
 description: "Examine how Microsoft Dynamics GP Payroll works in the US."
 keywords: "payroll"
 author: theley502
-manager: edupont
+manager: jswymer
 ms.prod: dynamics-gp
 ms.topic: article
-ms.reviewer: edupont
+ms.reviewer: jswymer
 ms.author: theley
-ms.date: 11/08/2021
+ms.date: 7/18/2022
 ---
 
 # Microsoft Dynamics GP U.S. Payroll
@@ -573,7 +573,7 @@ Use the Payroll Setup window to set up default entries that appear throughout Pa
 
 1. Open the Payroll Setup window. (HR & Payroll \>\> Setup \>\> Payroll \>\> Payroll)
 
-![Screenshot](media/fdf616c9571329cd1dd3c019a76a4b3c.jpg)
+![Screenshot of the Payroll Setup window.](media/fdf616c9571329cd1dd3c019a76a4b3c.jpg)
 
 1. Enter overtime information and passwords for vacation and sick time
     available, if necessary. You will need to enter a password when you create a
@@ -614,7 +614,7 @@ the queue, and how often the processing request will be retried.
 
 2. Choose Options to open the Payroll Setup Options window and enter additional Payroll default entries.
 
-  ![A screenshot](media/4708ab0e7f6f18ab63be383fd62d7757.jpg)
+  ![Screenshot of the Payroll Setup Options window.](media/4708ab0e7f6f18ab63be383fd62d7757.jpg)
 
 3. Enter the next transaction numbers and select the number of decimal places for pay rates, deductions, and benefits.
 
@@ -708,7 +708,7 @@ The following table shows the posting accounts required in Payroll and the depar
 
 Review this information for [enhancements around payroll posting in Microsoft Dynamics GP 2016](https://community.dynamics.com/gp/b/dynamicsgp/archive/2016/05/26/payroll-payroll-posting-accounts-setup-enhancements).
 
-![A screenshot ](media/c8ef526d4ad3653e6a8f4818c3fdc6e1.jpg)
+![Screenshot of a table, showing payroll accounts, the departments they are in and their account information, with brief descriptions of each account.](media/c8ef526d4ad3653e6a8f4818c3fdc6e1.jpg)
 
 #### Setting up Payroll posting accounts
 
@@ -730,7 +730,7 @@ select Setting Up the System. You also should have completed Setting up Payroll 
 
 1. Open the Payroll Posting Accounts Setup window. (Administration \>\> Setup     \>\> Posting \>\> Payroll Accounts)
 
-  ![A screenshot](media/de3a8d9af33d89faadcdcef9d7586911.jpg)
+  ![Screenshot of the Payroll Posting Accounts Setup window.](media/de3a8d9af33d89faadcdcef9d7586911.jpg)
 
 2. Select an account type and position for the employee's Payroll code. When
     you select an account type, existing accounts, and an account description
@@ -763,7 +763,7 @@ Before you can complete the procedure in this section, you must define the Payro
 
 1. Open the Analytical Payroll Default Dimensions window. (Administration \>\> Setup \>\> Posting \>\> Payroll Accounts \>\> Analytical Accounting button)
 
-    ![A screenshot](media/42dc967c9e3c5e9fd56262097bdd695e.jpg)
+    ![Screenshot of the Analytical Payroll Default Dimensions window.](media/42dc967c9e3c5e9fd56262097bdd695e.jpg)
 
 2. Select a payroll posting type.
 
@@ -1074,7 +1074,7 @@ The following are some examples of pay codes you might use:
 
 1. Open the Pay Code Setup window. (HR & Payroll \>\> Setup \>\> Payroll \>\> Pay Code)
 
-    ![A screenshot ](media/644032740fb9878dbb856d88ca409271.jpg)
+    ![Screenshot of the Pay Code Setup window.](media/644032740fb9878dbb856d88ca409271.jpg)
 
 1. Enter a pay code and description.
 
@@ -1165,7 +1165,7 @@ minimum wage balance, charged tips, and reported tips. The first pay code
 would be the normal hourly pay rate and weekly pay period, as shown in the
 following Employee Pay Code Maintenance window.
 
-![A screenshot](media/16760369754082cfedaae50db2ba65c2.jpg)
+![Screenshot of the Employee Pay Code Maintenance window, showing an example employee named Pilar Ackerman, and forty dollars entered into the Pay Rate field.](media/16760369754082cfedaae50db2ba65c2.jpg)
 
 Because her wages are derived primarily from tips, she also needs a charged
 tips and reported tips pay code.
@@ -1176,7 +1176,7 @@ the employee in the paycheck on a regularly scheduled basis, in this case,
 weekly. The following is an example of how you could set up the reported
 tips pay code.
 
-![A screenshot](media/5eba24a96b72d29e6640e70082a1f8de.jpg)
+![Screenshot of the Employee Pay Code Maintenance window, showing Tips Recieved set to Directly, and Pay Period set to Weekly.](media/5eba24a96b72d29e6640e70082a1f8de.jpg)
 
 Reported tips are tips the employee receives from patrons in cash. Employees
 need to report this amount to employers on a regular basis so that a
@@ -1190,7 +1190,7 @@ minimum wage balance pay code in addition to the three pay codes already
 assigned to her. The following is an example of how you could set up the
 minimum wage balance pay code.
 
-![A screenshot](media/049e78b866469e8ae7e3a82f53a5b715.jpg)
+![Screenshot of the Employee Pay Code Maintenance window, showing the Pay Rate set to ten dollars and the Unit of Pay set to Hourly.](media/049e78b866469e8ae7e3a82f53a5b715.jpg)
 
 
 > [!NOTE]
@@ -1509,7 +1509,7 @@ The following are some examples of deduction codes you might use:
 
 1. Open the Deduction Setup window. (HR & Payroll \>\> Setup \>\> Payroll \>\>    Deduction)
 
-![A screenshot ](media/0e0849380c5189db06e9801416ac33a1.jpg)
+![Screenshot of the Deduction Setup window.](media/0e0849380c5189db06e9801416ac33a1.jpg)
 
 1. Enter a deduction code and description.
 
@@ -1629,7 +1629,7 @@ window. See *Setting up maximum garnishment rules* .
 
 1. Open the Earnings Setup window. (HR & Payroll \>\> Setup \>\> Payroll \>\> Earnings Setup)
 
-    ![A screenshot ](media/7db8c46cdee43d97038d40b08f7f361a.jpg)
+    ![Screenshot of the Earnings Setup window.](media/7db8c46cdee43d97038d40b08f7f361a.jpg)
 
 1. Enter or select an earnings code.
 
@@ -1795,7 +1795,7 @@ In the **Employee Deduction Maintenance** window:
 |Federal|FEDLEVY (this is just an example)|
 |State |N/A|
 
-![A screenshot ?](media/DEDLEVY01.JPG)
+![Screenshot of the Employee Deduction window, showing a Garnishment Deduction Amount of twenty five thousand dollars.](media/DEDLEVY01.JPG)
 
 In the **Garnishment Maximum Setup** window:
 
@@ -1808,7 +1808,7 @@ In the **Garnishment Maximum Setup** window:
 | Min Wage Rule Amt	|$0 |
 | Earnings Code |FEDLEVY |
 
-![A screenshot again](media/DEDLEVY02.JPG)
+![Screenshot of the Paid Sales Transaction Removal window.](media/DEDLEVY02.JPG)
 
 In the **Earnings Setup** window:
 
@@ -1868,19 +1868,97 @@ In the **Employee Deduction Maintenance** window:
 | Federal | FEDCS |
 | State | AKCSWHLTH |
 
-![A screenshot again](media/DEDCHILDSUP1.JPG)
+![Screenshot of the Employee Deduction Maintenance window, showing deduction entries for an example child, named CHILD.](media/DEDCHILDSUP1.JPG)
 
 In the **Garnishment Maximum Setup** window:
 
-![one screenshot ](media/DEDCHILDSUP2.JPG)
+![Screenshot showing the garnishment maximum setup and the garnishment setup windows.](media/DEDCHILDSUP2.JPG)
 
 In the  **Earnings Setup** window:
 
-![Another screenshot ](media/DEDCHILDSUP3.JPG)
+![Screenshot showing earnings setup and the earnings setup windows. Federal child support withholding information displays in one window and state child support in the other.](media/DEDCHILDSUP3.JPG)
 
 Recap of **Calculate Checks** report:
 
-![Also a screenshot ](media/DEDCHILDSUP4.JPG)
+![Screenshot of a report, showing the net wages of the example employee after deductions and taxes are applied.](media/DEDCHILDSUP4.JPG)
+
+
+##### Creditor Garnishments
+
+There is a limit on the amount that can be garnished.  The CCPA states that the maximum amount of an employee’s ‘disposable earnings’ that can be garnished to repay a debt is the lesser of:
+
+- 25% of the employee’s disposable earnings for the week; or
+- The amount by which the employee’s disposable earnings for the week exceed 30 times the federal minimum hourly wage then in effect.
+
+> [!NOTE]
+> There is a table in the book for this depending on if the employee is paid weekly, biweekly, semimonthly or monthly.
+> 
+> Also, State Laws may still apply.
+
+Disposable earnings are determined by subtracting all deductions required by law from an employee’s gross earnings (wages, commissions, bonuses, sick pay, and periodic pension payments).  Deductions required by law include withholding for federal, state, or local income tax, social security or Medicare tax, state unemployment or disability tax, and mandated payments for state employee retirement systems (but not amounts designated for direct deposit into an employee’s bank account).  Voluntary deductions, such as health and life insurance premiums, union dues, and retirement plan contributions, are generally not subtracted from earnings to calculate disposable earnings.  In some states, health insurance contributions may be included in the calculation of disposable pay, especially if the contributions are mandated under a child support order.  Tips may or may not be earnings (depends on whether they are given directly to employees vs being added to the bill and paid to the employee later as earnings).
+
+In determining an employee’s disposable earnings, wages already subject to withholding for child support, tax levies, or bankruptcy orders are not considered deductions required by law.  Therefore, they should not be subtracted from gross earnings when determining the maximum amount subject to garnishment.  However, if the child support withholding order, tax levy, or bankruptcy order has priority over the creditor garnishment and constitutes at least 25% of the employee’s disposable wages, no amount can be withheld for the creditor garnishment.
+
+When looking at information, it looks like Creditor Garnishments will be an amount.  
+
+Ex:  Employee Michelle’s Disposable Earnings bi-weekly is $769.23. Her employer in Illinois receives a garnishment order on March 10, 2020 requiring that $1000 total be withheld at 15% per pay period.  
+
+The maximum amount of Michelle’s disposable earnings that can be garnished is determined as follows:
+
+- Creditor Deduction Calculation:
+    - $769.23 x 15% = $115.38 (this is the amount calculated for the Creditor Garnishment Deduction prior to looking at the Maximum rules)
+- Federal Creditor Garnishment Withholding Maximum:  Use the lesser of:
+    - (25% of Disposable Earnings) $769.23 x 25% = $192.31
+    - (The amount by which earnings are greater than 30 times the Federal Minimum Wage) (for bi-weekly 60 times the Federal Minimum Wage) 60 x $7.25= $435.00		$769.23-$435.00 = $334.23
+- IL Creditor Garnishment Withholding Maximum:  Use the lesser of:
+    - (25% of Disposable Earnings) $769.23 x 25% = $192.31
+    - (The amount by which earnings are greater than 30 times the State Minimum Wage)(for bi-weekly 60 times the State Minimum Wage) 60 x 8.25 = $495.00		$769.23-$495.00 = $274.23
+
+The computer calculates the Withholding Maximums and compares the numbers between state and federal.  The lowest maximum available amount to garnish is the amount available for garnishment.
+
+Typically if you have multiple garnishments with creditor garnishments in your setup as this example you would not mark the box to include previously sequenced garnishment deductions when using the Min Wage Rule Amount.  If you do, you will notice unexpected results.  What you will want to do with this example if you have more garnishments is include the first garnishment in your earnings code and reduce from earnings by that garnishment.  Then in this example, it still would only take the maximum of the two of 115.38, it adds them together and reduces the 2nd garnishment to take only as much as it can to keep the Min Wage Rule Amount you have set.
+
+How would we set up this deduction?
+
+In the **Employee Deduction Maintenance** window:
+
+| Field | Value |
+|--|--|
+| Deduction Type | Garnishment |
+| Method | Percent of Earnings |
+| Garnishment Category | Garnishment |
+| Amount | N/A |
+| Percent | 15 % |
+| Earnings | FEDCREDIT  |
+| Maximum Deduction Codes |  |
+| Federal | FEDCEDIT |
+| State | STATECRED |
+
+![Screenshot of the Employee Deduction Maintenance window, showing default entries and empty input boxes.](media/CREDITOR.JPG)
+
+In the **Garnishment Maximum Setup** window:
+
+![Screenshot of a table above two Garnishment Maximum Setup windows. This table lists code, method, and wages information. One window is for Federal credit, and the other is for state credit.](media/CREDITOR1.JPG)
+
+In the  **Earnings Setup** window:
+
+![Screenshot of a table above two Earnings Setup windows. This table lists codes, deductions, and tax information. One window is for Federal credit, and the other is for state credit.](media/CREDITOR2.JPG)
+
+Recap of **Calculate Checks** report:
+
+![Screenshot of a report that shows the net wages of the example employee after deductions and taxes are applied.](media/CREDITOR3.JPG)
+
+If you need to take another garnishment before this Credit garnishment of 115.38 but still have the total of the two are 115.38 so you meet the Min Wage Rule Amount you set in Garnishment Maximum setup.  Create your other deduction, in this example it was a fixed amount of 30.00 I want that out first, then my credit deduction listed above.  In your Earnings Setup code, insert over this deduction under the Reduce from Earnings area.
+
+In this example, I lowered my pay so you can see the minimum kick in
+Federal Creditor Garnishment Withholding Maximum:  Use the lesser of:
+•	(25% of Disposable Earnings) $480.77 x 25% = $120.19
+•	(The amount by which earnings are greater than 30 times the Federal Minimum Wage) (for bi-weekly 60 times the Federal Minimum Wage) 
+60 x $7.25= $435.00		$480.77-$435.00 = $45.77
+
+![Screenshot of the earnings setup window.](media/CREDITOR4.JPG)
+
+
 
 #### Setting up a company-level deduction sequence
 
@@ -2027,7 +2105,7 @@ The following are some examples of benefit codes you might use:
 1. Open the Benefit Setup window. (HR & Payroll \>\> Setup \>\> Payroll \>\>
     Benefit)
 
-    ![A screenshot](media/cdf6a8619154146748417f11286432b1.jpg)
+    ![Screenshot of the Benefit Setup window, showing default entries and empty input boxes.](media/cdf6a8619154146748417f11286432b1.jpg)
 
 1. Enter a benefit code and description.
 
@@ -2364,7 +2442,7 @@ the tax rate won't be applied when the maximum amount is reached.
 1. Open the Payroll Local Tax Setup window. (HR & Payroll \>\> Setup \>\>
     Payroll \>\> Local Tax)
 
-![A screenshot ](media/18fcb2fe462d9b4e41beb175bc0256f4.jpg)
+![Screenshot of the payroll local tax setup window.](media/18fcb2fe462d9b4e41beb175bc0256f4.jpg)
 
 1. Enter or select a local tax code and a description.
 
@@ -2647,7 +2725,7 @@ you create. You can have only one default employee class.
 1. Open the Employee Class Setup window. (HR & Payroll \>\> Setup \>\> Payroll
     \>\> Employee Class)
 
-    ![A screenshot of a cell phone Description automatically generated](media/aada160ae5174faaeae194812022ee9e.jpg)
+    ![Screenshot of the Employee Class Setup window, showing default entries and empty input boxes.](media/aada160ae5174faaeae194812022ee9e.jpg)
 
 2. Enter an ID and description for the class.
 
@@ -2833,7 +2911,7 @@ tracking tips* for more information.
 1. Open the Employee Maintenance window. (HR & Payroll \>\> Cards \>\> Payroll
     \>\> Employee)
 
-    ![A screenshot](media/6a0e4daae9eb17c33aa058f859855385.jpg)
+    ![Screenshot of the employee maintenance window.](media/6a0e4daae9eb17c33aa058f859855385.jpg)
 
 1. Enter an employee ID. *If you don't enter an employee ID, Payroll retrieves
     the next employee ID for this field if employee IDs were auto-assigned in
@@ -2938,7 +3016,7 @@ hours per year, and posting account information.
 2. Enter or select an employee ID and choose Additional Information to open the
     Employee Additional Information Maintenance window.
 
-![A screenshot ](media/0a325f909f1f1ee2d85f5d4a4be08034.jpg)
+![Screenshot of the employee additional information maintenance window.](media/0a325f909f1f1ee2d85f5d4a4be08034.jpg)
 
 1. Enter the employee's birth date, nickname, and alternate name—if applicable—
     and select the employee's gender.
@@ -3058,7 +3136,7 @@ active employees is less than the number your company is registered for.
 1. Open the Employee Maintenance window. (HR & Payroll \>\> Cards \>\> Payroll
     \>\> Employee)
 
-    ![screenshot](media/2298b740be1a0de30dd133ef4e2ea527.jpg)
+    ![Screenshot showing the Reactivate Employee dialog showing employee information and records to reactivate.](media/2298b740be1a0de30dd133ef4e2ea527.jpg)
 
 1. Enter or select an employee ID.
 
@@ -3191,7 +3269,7 @@ employee card .*
 1. Open the Employee Pay Code Maintenance window. (HR & Payroll \>\> Cards \>\>
     Payroll \>\> Pay Code)
 
-    ![A screenshot](media/16760369754082cfedaae50db2ba65c2.jpg)
+    ![Screenshot of the Employee Pay Code Maintenance window showing details for an example employee.](media/16760369754082cfedaae50db2ba65c2.jpg)
 
 1. Enter or select an employee ID.
 
@@ -3340,7 +3418,7 @@ for federal taxes.
 1. Open the Employee Tax Maintenance window. (HR & Payroll \>\> Cards \>\>
     Payroll \>\> Tax)
 
-    ![A screenshot](media/e79f455694461d269bc46933e6331df8.jpg)
+    ![Screenshot of the Employee Tax Maintenance window.](media/e79f455694461d269bc46933e6331df8.jpg)
 
 1. Enter or select an employee ID.
 
@@ -3408,7 +3486,7 @@ employee works in two states, you might need to set up two state tax cards.
 1. Open the Employee State Tax Maintenance window. (HR & Payroll \>\> Cards
     \>\> Payroll \>\> State Tax)
 
-    ![A screenshot ](media/a1583fd2f8ed71e5937ca3abde794ad9.jpg)
+    ![Screenshot of the Employee State Tax Maintenance window.](media/a1583fd2f8ed71e5937ca3abde794ad9.jpg)
 
 1. Enter or select an employee ID.
 
@@ -3476,7 +3554,7 @@ tax* for more information.
 1. Open the Employee Local Tax Maintenance window. (HR & Payroll \>\> Cards
     \>\> Payroll \>\> Local Tax)
 
-    ![A screenshot ](media/097d06aadd22726915ef8a56f7071066.jpg)
+    ![Screenshot of the Employee Local Tax Maintenance window.](media/097d06aadd22726915ef8a56f7071066.jpg)
 
 1. Enter or select an employee ID.
 
@@ -3541,7 +3619,7 @@ If a deduction is not coming out of an employee check review the below:
 
 1. Open the Employee Deduction Maintenance window. (HR & Payroll \>\> Cards\>\> Payroll \>\> Deduction)
 
-![A screenshot of a cell phone Description automatically generated](media/df1d148ead16783b51fde32e790e8c23.jpg)
+![Screenshot of the Employee Eduction Maintenance window.](media/df1d148ead16783b51fde32e790e8c23.jpg)
 
 1. Enter or select an employee ID.
 
@@ -3783,7 +3861,7 @@ information, refer to *Using zero benefit and deduction amounts* .
 1. Open the Employee Benefit Maintenance window. (HR & Payroll \>\> Cards \>\>
     Payroll \>\> Benefit)
 
-![A screenshot of a cell phone Description automatically generated](media/9d887bb738d8edd54598ee7f8a811071.jpg)
+![Screenshot of the Employee Benefit Maintenance window.](media/9d887bb738d8edd54598ee7f8a811071.jpg)
 
 
 
@@ -3882,7 +3960,7 @@ You have several options when entering beginning balances:
 1. Open the Payroll Manual Check-Adjustment Entry window. (HR & Payroll \>\>
     Transactions \>\> Payroll \>\> Manual Checks)
 
-![A screenshot of a cell phone Description automatically generated](media/69fb31b1b0ae79f9bbd2ac0f482184ff.jpg)
+![Screenshot of the Payroll Manual Check Adjustment Entry window.](media/69fb31b1b0ae79f9bbd2ac0f482184ff.jpg)
 
 A screenshot of a cell phone Description automatically generated
 
@@ -4014,7 +4092,7 @@ later time.
 1. Open the Payroll Batch Entry window. (HR & Payroll \>\> Transactions \>\>
     Payroll \>\> Batches)
 
-![Screenshot](media/e0726813288419d658db5276e0a231c7.jpg)
+![Screenshot of the Payroll Batch Entry window.](media/e0726813288419d658db5276e0a231c7.jpg)
 
 A screenshot of a computer screen Description automatically generated
 
@@ -4101,7 +4179,7 @@ backups.
 1. Open the Payroll Batch Entry window. (HR & Payroll \>\> Transactions \>\>
     Payroll \>\> Batches)
 
-![Screenshot](media/e0726813288419d658db5276e0a231c7.jpg)
+![Screenshot of the Payroll Batch Entry window.](media/e0726813288419d658db5276e0a231c7.jpg)
 
 1. Enter or select the batch ID and origin for the batch to post. *Only batches
     with a manual check origin can be posted in this window.*
@@ -4290,7 +4368,7 @@ The first time you open the window, you'll have the option to open the
 Payroll Transaction Entry window or the Payroll Mass Transaction Entry
 window.
 
-![A screenshot of a cell phone Description automatically generated](media/63bbebba6b7563ee72a87709aa3241d4.jpg)
+![Screenshot of the Payroll Transaction Entry window.](media/63bbebba6b7563ee72a87709aa3241d4.jpg)
 
 
 
@@ -4306,7 +4384,7 @@ window.
     default values for the next transaction or automatically creating default
     transactions. Refer to the online help for this window for more information.
 
-![A screenshot of a cell phone Description automatically generated](media/275e6287baa73484e323a985e5136dc4.jpg)
+![Screenshot of the Payroll Transaction Entry Options window, showing the No Options entry selected.](media/275e6287baa73484e323a985e5136dc4.jpg)
 
 
 
@@ -4427,7 +4505,7 @@ window that are posted collectively as a single, complete transaction. You can c
 
 1. Open the Payroll Manual Check–Adjustment Entry window. (HR & Payroll \>\>Transactions \>\> Payroll \>\> Manual Checks)
 
-    ![A screenshot of a cell phone Description automatically generated](media/69fb31b1b0ae79f9bbd2ac0f482184ff.jpg)
+    ![Screenshot of the Payroll Manual Check Adjustment Entry window.](media/69fb31b1b0ae79f9bbd2ac0f482184ff.jpg)
 
 
 2. Select a check type.
@@ -4678,7 +4756,7 @@ o    Negative Amount = Decrease in Federal Taxable Wages
 > NO tax calculations will be done for you automatically. You need to know the amount by which both Federal Tax and Federal Taxable Wages need to be adjusted. GP will not calculate Federal Tax for you automatically in this window.
 
 
-![A screenshot of a cell phone Description automatically generated](media/MCADD4.jpg)
+![Screenshot of the Payroll Manual Check Transaction Entry window.](media/MCADD4.jpg)
 
 
 **Federal Tax transaction in Manual Check Transaction Entry Window**
@@ -4712,7 +4790,7 @@ o    Negative Amount = Decrease in Employer owed FICA Social Security Tax
     > [!NOTE]
     > NO tax calculations will be done for you automatically. You need to know the amount by which the FICA Social Security Tax, the FICA Social Security Taxable Wages, and the Employer FICA Social Security Taxes need to be adjusted. GP will not calculate FICA Social Security Tax for you automatically in this window.
 
-![A screenshot of a cell phone Description automatically generated](media/MCADD5.jpg)
+![Screenshot showing the Payroll Manual Check Transaction Entry window.](media/MCADD5.jpg)
 
 
 **FICA Social Security Tax transaction in Manual Check Transaction Entry Window**
@@ -4759,7 +4837,7 @@ o    Negative Amount = Decrease in Employer owed FICA Medicare Tax
 > NO tax calculations will be done for you automatically. You need to know the amount by which the FICA Medicare Tax, the FICA Medicare Taxable Wages, and the Employer FICA Medicare Taxes need to be adjusted. GP will not calculate FICA Medicare Tax for you automatically in this window.
 
 
-![A screenshot of a cell phone Description automatically generated](media/MCADD6.jpg)
+![Screenshot of the manual check transaction entry window showing FICA social security tax selected as transaction type.](media/MCADD6.jpg)
 
 
 **FICA Medicare Tax transaction in Manual Check Transaction Entry Window**
@@ -4791,7 +4869,7 @@ o    Negative Amount = Decrease in State Taxable Wages
 > [!NOTE]
 > NO tax calculations will be done for you automatically. You need to know the amount by which the State Tax and State Taxable Wages need to be adjusted. GP will not calculate State Tax for you automatically in this window.
 
-![A screenshot of a cell phone Description automatically generated](media/MCADD7.jpg)
+![Screenshot of the Payroll Manual Check Transaction Entry window, showing State Tax selected as the transaction type.](media/MCADD7.jpg)
 
 
 **State Tax transaction in Manual Check Transaction Entry Window**
@@ -4821,7 +4899,7 @@ o    Negative Amount = Decrease in Local Taxable Wages
 > NO tax calculations will be done for you automatically. You need to know the amount by which the Local Tax and Local Taxable Wages need to be adjusted. GP will not calculate Local Tax for you automatically in this window.
 
 
-![A screenshot of a cell phone Description automatically generated](media/MCADD8.jpg)
+![Screenshot of the Payroll Manual Check Transaction Entry window, showing Local Tax selected as the transaction type.](media/MCADD8.jpg)
 
 **Local Tax transaction in Manual Check Transaction Entry Window**
 
@@ -4852,7 +4930,7 @@ To enter/adjust an amount for a specific Pay Advance:
 > NO tax calculations will be done for you automatically. If you need to increase or decrease taxes in association with this pay advance, you'll need to do so manually with the appropriate tax in this window.
 
 
-![A screenshot of a cell phone Description automatically generated](media/MCADD9.jpg)
+![Screenshot of the Payroll Manual Check Transaction Entry window, showing Pay Advance selected as the transaction type.](media/MCADD9.jpg)
 
 
 **Pay Advance transaction in Manual Check Transaction Entry Window**
@@ -4884,7 +4962,7 @@ To enter/adjust an amount for a specific Pay Advance:
 > NO tax calculations will be done for you automatically. If you need to increase or decrease taxes in association with this withhold advance, you'll need to do so manually with the appropriate tax in this window.
 
 
-![A screenshot of a cell phone Description automatically generated](media/MCADD10.jpg)
+![Screenshot of the Payroll Manual Check Transaction Entry window, showing Withold Advance selected as the transaction type.](media/MCADD10.jpg)
 
 
 **Withhold Advance transaction in Manual Check Transaction Entry Window**
@@ -4915,7 +4993,7 @@ o    Negative Amount = Decrease in Employer owed FICA Social Security Tips Tax
 > [!NOTE]
 > NO tax calculations will be done for you automatically. You need to know the amount by which the FICA Social Security Tips Tax, the FICA Social Security Tips Taxable Wages, and the Employer FICA Social Security Tips Taxes need to be adjusted. GP will not calculate FICA Social Security Tips Tax for you automatically in this window.
 
-![A screenshot of a cell phone Description automatically generated](media/MCADD11.jpg)
+![Screenshot of the Payroll Manual Check Transaction Entry window, showing FICA Soc Sec/Tips selected as the transaction type.](media/MCADD11.jpg)
 
 **FICA Social Security/Tips transaction in Manual Check Transaction Entry Window**
 
@@ -4948,7 +5026,7 @@ o    Negative Amount = Decrease in Employer owed FICA Medicare Tips Tax
 > [!NOTE]
 > NO tax calculations will be done for you automatically. You need to know the amount by which the FICA Medicare Tips Tax, the FICA Medicare Tips Taxable Wages, and the Employer FICA Medicare Tips Taxes need to be adjusted. GP will not calculate FICA Medicare Tips Tax for you automatically in this window.
 
-![A screenshot of a cell phone Description automatically generated](media/MCADD12.jpg)
+![Screenshot of the Payroll Manual Check Transaction Entry window, showing FICA Medicare/Tips selected as the transaction type.](media/MCADD12.jpg)
 
 **FICA Medicare Tips transaction in Manual Check Transaction Entry Window**
 
@@ -4978,7 +5056,7 @@ o    Negative Amount = Decrease in Federal Taxable Tips Wages
 > NO tax calculations will be done for you automatically. You need to know the amount by which both Federal Tips Tax and Federal Taxable Tips Wages need to be adjusted. GP will not calculate Federal Tips Tax for you automatically in this window.
 
 
-![A screenshot of a cell phone Description automatically generated](media/MCADD13.jpg)
+![Screenshot of the Payroll Manual Check Transaction Entry window, showing Federal Tax/Tips selected as the transaction type.](media/MCADD13.jpg)
 
 
 **Federal Tax/Tip transaction in Manual Check Transaction Entry Window**
@@ -5003,7 +5081,7 @@ o    Negative Amount = Decrease Uncollected FICA Soc Sec Tax on Tips
 > [!NOTE]
 > NO tax calculations will be done for you automatically. You need to know the amount by which the Uncollected FICA Social Security Tax needs to be adjusted. GP will not calculate Uncollected FICA Social Security Tax for you automatically in this window.
 
-![A screenshot of a cell phone Description automatically generated](media/MCADD14.jpg)
+![Screenshot of the Payroll Manual Check Transaction Entry window, showing Uncollected FICA Soc Sec Tax selected as the transaction type.](media/MCADD14.jpg)
 
 
 **Uncollected FICA Social Security Tax transaction in Manual Check Transaction Entry Window**
@@ -5027,7 +5105,7 @@ o    Negative Amount = Decrease Uncollected FICA Medicare Tax on Tips
 > [!NOTE]
 > NO tax calculations will be done for you automatically. You need to know the amount by which the Uncollected FICA Medicare Tax needs to be adjusted. GP will not calculate Uncollected FICA Medicare Tax for you automatically in this window.
 
-![A screenshot of a cell phone Description automatically generated](media/MCADD15.jpg)
+![Screenshot of the Payroll Manual Check Transaction Entry window, showing Uncollected FICA Medicare Tax selected as the transaction type.](media/MCADD15.jpg)
 
 **Uncollected FICA Medicare Tax transaction in Manual Check Transaction Entry Window**
 
@@ -5058,7 +5136,7 @@ deleted.
 
     (HR & Payroll \>\> Transactions \>\> Payroll \>\> Manual Check \>\> Choose the Distributions button \>\> Choose the Analytical Accounting button)
 
-    ![A screenshot of a computer Description automatically generated](media/3e3fb21a87f45dc6186c5861d8800dd4.jpg)
+    ![Screenshot of the Analytical Payroll Transaction Entry window.](media/3e3fb21a87f45dc6186c5861d8800dd4.jpg)
 2. Depending on how you opened the Analytical Payroll Transaction Entry window, the information displayed will be either for the distribution or transaction that you selected. To view the other distributions or transactions, enter or select a different number in the Distribution or Transaction field.
 
     - **Functional Amount** This field displays the amount in the originating or functional currency based on the option selected in the currency view.
@@ -5138,7 +5216,7 @@ Use the Build Payroll Checks window to process an advance pay run.
 1. Open the Build Payroll Checks window. (HR & Payroll \>\> Transactions \>\>
     Payroll \>\> Build Checks)
 
-    ![A screenshot of a cell phone Description automatically generated](media/1e36a8512538982953a287380391da87.jpg)
+    ![Screenshot of the Build Payroll Checks window.](media/1e36a8512538982953a287380391da87.jpg)
 1. Enter or select a default ID. You can enter that default ID the next time
     you build an identical or similar pay run.
 
@@ -5257,7 +5335,7 @@ You can build checks again before they're calculated. Before you build checks, y
 1. Open the Build Payroll Checks window. (HR & Payroll \>\> Transactions \>\>
     Payroll \>\> Build Checks)
 
-    ![A screenshot of a cell phone Description automatically generated](media/1e36a8512538982953a287380391da87.jpg)
+    ![Screenshot showing the Build Payroll Checks window.](media/1e36a8512538982953a287380391da87.jpg)
 
 
 1. Enter or select a default ID. You can enter that default ID the next time
@@ -5330,7 +5408,7 @@ them. This procedure assumes you've completed *Building Payroll checks* .
 
 1. Open the Calculate Payroll Checks window. (HR & Payroll \>\> Transactions \>\> Payroll \>\> Calculate Checks)
 
-    ![A screenshot of a cell phone Description automatically generated](media/11423b22f1aceb44551474e40f1043b4.jpg)
+    ![Screenshot of the Calculate Payroll Checks window.](media/11423b22f1aceb44551474e40f1043b4.jpg)
 
 2. Choose OK to begin calculating the checks.
 
@@ -5355,7 +5433,7 @@ Use the Print Payroll Checks window to print computer paychecks after the Calcul
 
 1. Open the Print Payroll Checks window. (HR & Payroll \>\> Transactions \>\> Payroll \>\> Print Checks)
 
-    ![A screenshot of a cell phone Description automatically generated](media/529c50bbcba1dc421f58862d95aeb560.jpg)
+    ![Screenshot of the Print Payroll Checks window. Check details including starting check number, check date and ACH posting date.](media/529c50bbcba1dc421f58862d95aeb560.jpg)
 
 1. Enter or select a checkbook ID that checks will be posted to.
 
@@ -5445,6 +5523,74 @@ If you're keeping check and transaction history, information for the original ch
 
 Depending on how your Payroll system has been set up, several reports might be printed when you choose Process—including the Check Posting Register and Check Register. The Check Posting Register is like the Void Payroll Checks Edit List and shows the details for each transaction that has been posted.
 
+If you receive an error message:
+“There are no checks in this range to void for this checkbook ID and year”. 
+
+“One or more checks cannot be voided because errors exist. To verify the checks that cannot be voided, print an Edit List, and unmark the checks that contain errors. Then, choose Process to continue.” 
+
+Several things must exist for the Void Check feature to work in Payroll. If any of the below data conditions exist or are missing, this maybe the reason why a check cannot be voided. If a payroll interruption occurred this could have created bad data in the tables by not updating the tables correctly.  
+
+The check you are trying to void must exist in both:  
+
+Check History table UPR30100 HR & Payroll >> Inquiry >> Payroll >> Check History and 
+Transaction History table UPR30300 HR & Payroll >> Inquiry >> Payroll >> Transaction History. 
+
+The check cannot have a duplicate check number in the check history table. Execute this statement to see if duplicates exist. 
+Select * from UPR30100 where CHEKNMBR ='XXXX' –replace XXXX with the check number you are trying to void. 
+
+If leading zeros are not used in the check number (Cards >> Financial >> Checkbook), the system may see duplicate check numbers because GP reads check numbers from left to right. This is why it is highly recommended to use leading zeros in check numbers. 
+
+If no leading zeros are used GP will see duplicate check numbers: 
+101 
+1011 
+
+If leading zeros are used GP will not see duplicate check numbers: 
+00101 
+01011 
+
+The check must be available to be reconciled in the Bank Reconciliation module. 
+
+Go into SQL Server Management Studio execute these statements:  
+
+The data results for these columns RECONUM, Recond, VOIDED must all equal 0 for the check to appear in the void window. If any of these columns has a ‘1’ the check will not appear in the void window. 
+
+Select RECONUM, Recond, VOIDED, * from CM20200 where SRCDOCNUM  = 'XXXX' –replace XXXX with the check number you are trying to void. 
+
+If the data returned displays duplicate check numbers, you cannot void the check even if the duplicate check numbers are from different modules. 
+
+Select * from CM20200 where CMTrxNum ='XXXX'–replace XXXX with the check number you are trying to void. 
+
+The check must fall within the current year. 
+
+The check you are trying to void contains a pay code, deduction code, and/or benefit code that has not been assigned to the employee in GP. This can only occur when payroll transactions are imported into GP. Core Dynamics GP will not allow a user to manually enter a transaction which contains a pay code, deduction code, and/or benefit code that is not currently assigned to the employee (but transactions with codes not assigned to the employee can be imported and posted in GP). 
+
+Go to Check History Inquiry window: Inquiry >> Payroll >> Check History.  
+
+Select the employee id with the check that needs to be voided. 
+
+Highlight the line that contains the problem check number >> click on the Transactions button to open the Payroll Transaction Inquiry window.  
+
+Note all the pay codes, deduction codes, and benefits codes associated with the check. 
+
+Run the following select statements in SQL Server Management Studio replacing XXX with the problem employee id: The data returned is telling what codes are assigned to the employee. 
+
+SELECT * FROM UPR00400 WHERE EMPLOYID = 'XXX' /*PAY CODE MASTER*/ 
+
+SELECT * FROM UPR00500 WHERE EMPLOYID = 'XXX' /*DEDUCTION MASTER*/ 
+
+SELECT * FROM UPR00600 WHERE EMPLOYID = 'XXX' /*BENEFIT MASTER*/ 
+
+Look for any codes included in the check that are not assigned to the employee.  
+
+If there are codes in the check that are not assigned to the employee, you should be able to resolve the problem by assigning the employee to the code(s) included on the check that the employee is not currently assigned to.  
+
+To add codes to the employee record, go to: 
+Cards >> Payroll >> Pay Code 
+Cards >> Payroll >> Deduction  
+Cards >> Payroll >> Benefits. 
+
+After adding the code(s) to the employee record, try voiding the check again. If the check still cannot be voided you will have to back out the check by creating a negative manual check, noted in this section above.
+
 #### Reprinting paystubs and earnings statements
 
 Use the Payroll Check Inquiry window to reprint paystubs and direct deposit earnings statements in a format that closely resembles the original documents.
@@ -5517,19 +5663,19 @@ The following windows illustrate transactions for the first minimum wage
 balance example. The first transaction is the normal hourly pay code for the
 employee.
 
-![A screenshot of a cell phone Description automatically generated](media/b2328bdb8bdcaefa2bee0190c76f6ebc.jpg)
+![Screenshot of the Payroll Transaction Entry window, showing the transaction code set at HOUR for the amount of forty.](media/b2328bdb8bdcaefa2bee0190c76f6ebc.jpg)
 
 
 The second transaction reflects charged tips for the employee for the same
 period.
 
-![A screenshot of a computer Description automatically generated](media/b8f4f8a7789344ff2627de3549f18d7f.jpg)
+![Screenshot of the Payroll Transaction Entry window, showing the transaction code set at CDTWK for the amount of two hundred dollars.](media/b8f4f8a7789344ff2627de3549f18d7f.jpg)
 
 
 The third transaction is for reported tips for the same period, an amount
 the employee provides to her employer.
 
-![A screenshot of a computer Description automatically generated](media/75c7d37c4ca4a418807fe2f0f8610661.jpg)
+![Screenshot of the Payroll Transaction Entry window, showing the transaction code set at RDTWK for the amount of one hundred and fifty dollars.](media/75c7d37c4ca4a418807fe2f0f8610661.jpg)
 
 
 No automatic transaction would be generated for minimum wage balance. This
@@ -5847,7 +5993,7 @@ available to a particular employee.
 
 1. Open the Employee Summary Inquiry window. (HR & Payroll \>\> Inquiry \>\> Payroll \>\> Employee Summary)
 
-    ![A screenshot of a cell phone Description automatically generated](media/8cfc7d72df637577f9d3c41043a5f280.jpg)
+    ![Screenshot of the Employee Summary Inquiry window.](media/8cfc7d72df637577f9d3c41043a5f280.jpg)
 
 1. Enter or select an employee ID.
 
@@ -6535,7 +6681,7 @@ not apply to employee /pay code combinations assigned to pay step tables.
 1. Open the Employee Mass Update window. (HR & Payroll \>\> Utilities \>\>
     Payroll \>\> Mass Update)
 
-    ![A screenshot of a cell phone Description automatically generated](media/200ffaf9acb4f75939c8b955e19e4998.jpg)
+    ![Screenshot of the Employee Mass Update window.](media/200ffaf9acb4f75939c8b955e19e4998.jpg)
 
 1. Select a record type to update.
 
@@ -6581,7 +6727,7 @@ receive \$250.00 after taxes.
 1. Open the Payroll Gross Up window. (HR & Payroll \>\> Utilities \>\> Payroll
     \>\> Gross Up)
 
-    ![A screenshot of a cell phone Description automatically generated](media/b261605dcfe8ac32b37de75036950e81.jpg)
+    ![Screenshot of the Payroll Gross Up window.](media/b261605dcfe8ac32b37de75036950e81.jpg)
 
 1. Enter the net amount to pay your employee. 3. Enter the employee's federal
     tax percentage.
@@ -6873,7 +7019,7 @@ circumstances:
 1. Open the Payroll Edit Federal Tax Liabilities window. (HR & Payroll \>\>
     Utilities \>\> Payroll \>\> Edit Liabilities)
 
-![A screenshot of a cell phone Description automatically generated](media/869d9e56ec4b80c38c3cd9d704e9b970.jpg)
+![Screenshot of the Payroll Edit Federal Tax Liabilities window.](media/869d9e56ec4b80c38c3cd9d704e9b970.jpg)
 
 1. Move the cursor to the first available line in the scrolling window to enter  information for a missing pay run.
 
@@ -6910,7 +7056,7 @@ federal, state, and local taxes tables, if necessary.
 
 1. Open the Payroll Tax Setup window. (Administration \>\> Setup \>\> System    \>\> Payroll Tax)
 
-    ![A screenshot of a cell phone Description automatically generated](media/1c8fdb05ebc9940b765583ecf2defd65.jpg)
+    ![Screenshot of the Payroll Tax Setup window.](media/1c8fdb05ebc9940b765583ecf2defd65.jpg)
 
 2. Enter or select a tax code. The tax calculations for that code will be displayed in the Sequence list box. For more information, refer to *Tax calculation methods* .
 
@@ -7206,7 +7352,7 @@ liabilities.
 1. Open the Period-End Payroll Reports window. (HR & Payroll \>\> Reports \>\>
     Payroll \>\> Period-End)
 
-    ![A screenshot of a cell phone Description automatically generated](media/8714afc30e1cbb2b04276244c09ec9c4.jpg)
+    ![Screenshot of the Period-End Payroll Reports window.](media/8714afc30e1cbb2b04276244c09ec9c4.jpg)
 
 1. Select the range of information you want to specify. Records within the
     range you specify will be included on the report.
@@ -7237,6 +7383,270 @@ summary of your wages and taxes.
 3. Select the quarter-end reports to print. For information about each type of report, refer to *Chapter 15, "Payroll reports."*
 
 4. Choose Process. The reports you've marked will be printed.
+
+**Detailed information on Quarterly 941 report**
+
+Information on the 941 is generated using information found in the following tables in GP:
+UPR00900	Payroll Employee Summary 
+UPR00901	Payroll Employee Tips Summary 
+UPR30200	Tax Liability File
+UPR30300	Payroll Transaction History (Detail)
+UPR00400	Payroll Pay Code Master
+UPR00500	Payroll Deduction Master
+UPR00600	Payroll Benefit Master
+
+Here is a detailed description of how each line is calculated on 941 Report:
+
+*LINE 1: NUMBER OF EMPLOYEES *
+Line 1 includes both active and inactive employees. Law requires that the 941 report include the total number of employees for all quarters. 
+
+The number of employees is based on the number of employees that are paid during the period for which you are reporting. Because Microsoft Dynamics GP does not maintain a daily count of employees, an approximation is all that can be completed. 
+
+All in all, if the employee has wages in the UPR00900/UPR00901 for the employee during the time frame for which the report is generated: the employee will be included in the employee count.
+
+The count also does not include employees that have a Household Employee tax status. 
+
+*LINE 2: WAGES AND TIPS, AND OTHER COMPENSATION *
+This line shows Total Federal Wages for all employees.
+The calculation for Line 2 is as follows:
+First the amount in the Gross Wages field in the Employee Summary window and the amounts in the Reported Tips and Charged Tips fields in the Employee Tips Summary window are added together.
+
+Next, Taxable Pension Wages (UPR30300) are subtracted and Taxable Benefits (UPR30300) are added.
+
+Finally, Microsoft Dynamics GP reduces the total by any Tax Sheltered Deductions (UPR30300) to come up with the amount you see in Line 2.
+
+Here is an example of the calculation:
+
+Total Federal Wages = Gross Wages + Reported Tips + Charged Tips – Taxable Pension Wages + Taxable Benefits – Tax Sheltered Deductions
+
+
+Fields used to calculate Line 2 on the 941 in GP
+
+- Gross Wages            | Employee Summary        | UPR00900  | Cards-Payroll-Summary
+- Reported Tips        | Employee Tips Summary    | UPR00901  | Cards-Payroll-Summary-Tips
+- Charged Tips        | Employee Tips Summary    | UPR00901  | Cards-Payroll-Summary-Tips
+- Taxable Pension Wages | Payroll Transaction Inquiry| UPR00400  | Cards-Payroll-Paycode
+- | UPR30300  | Cards-Payroll-Paycode-Summary
+- Taxable Benefits    | Payroll Transaction Inquiry| UPR00600  | Cards-Payroll-Benefits
+- | UPR30300  | Cards-Payroll-Benefits-Summary
+- Tax Sheltered Deductions| Payroll Transaction Inquiry| UPR00500  | Cards-Payroll-Deduction
+- | UPR30300  | Cards-Payroll-Deduction-Summary
+
+*Important Note: Non-Taxable Pension Wages will be included in line 2 of the 941 in Microsoft Dynamics GP.
+
+If you have an employee with Non-Taxable Pension Wages (PAYTYPE of 11 in the UPR00400), and you do not want them included in line 2 of the 941: You can reduce ‘Gross Wages’ for the employee in the Employee Summary window by the amount of the overstated non-taxable pension wages (Cards >> Payroll >> Summary >> Reduce Gross Wages field) to keep them from being included on line 2.
+
+*LINE 3: TOTAL INCOME TAX WITHHELD FROM WAGES, TIPS, AND OTHER COMPENSATION*
+Microsoft Dynamics GP sums the amount in the Federal Tax Withheld field in the Employee Summary window for all employees for all applicable months.
+
+This amount does not include tax on pension pay types. 
+
+Fields used to calculate Line 3 on the 941 in GP
+
++	Federal Tax Withholding	 | Employee Summary	  | UPR00900  |  Cards-Payroll-Summary
+
+*LINE 4 (TRUE OR FALSE):*
+If wages, tips and other compensation are NOT subject to Social Security or Medicare Tax, an X WILL be displayed on this line. 
+If wages, tips and other compensation ARE subject to Social Security or Medicare Tax, there WILL NOT be an X displayed on this line. 
+
+Microsoft Dynamics GP will look at the UPR00400 (Pay Code Setup) and UPR30300 (Payroll Transaction History) tables to determine whether or not there are wages subject to Social Security or Medicare Tax.
+
+1 = True
+0 = False |	Subject To Federal Tax	Employee Pay Code Maintenance |	UPR00400
+
+*LINE 5: TAXABLE SOCIAL SECURITY AND MEDICARE WAGES AND TIPS *
+*Line 5a: Taxable Social Security Wages *
+
+The calculation for Line 5a is as follows:
+
+The FICA Social Security Wages amounts are summed from the Employee Summary window for each applicable month. 
+
+Next, the total FICA Social Security Wages field for each applicable month is multiplied by 12.4 %. (Employee + Employer share).   
+
+Fields used to Calculate Line 5a on the 941 in GP
+
+	
++	FICA Social Security Wages	 |   Employee Summary 	 |   UPR00900   | Cards-Payroll-Summary
+
+Multiplied by total tax rate Percentage
+
+Currently: 12.4 % 	Employer & Employee FICA SS Tax Rate 
+
+Found in Payroll Tax Tables | Tools | Setup | System | Payroll Tax
+Codes EFICS (Employer) FICAS (Employee)
+
+*Line 5b: Taxable Social Security Tips *
+
+The calculation for Line 5b is as follows:
+
+Microsoft Dynamics GP first sums the FICA Social Security Tips fields for all applicable employees in the Employee Tips Summary Window for each month included on the report. This is the sum of Reported Tips and Charged Tips that are subject to FICA Social Security tax.
+Next, the sum of the FICA Social Security Tips are multiplied by 12.4 %. (Employee + Employer share).   
+
+Fields used to calculate Line 5b on the 941 in GP
+
++	FICA Social Security Tips (array)	 | Employee Tips Summary 	| UPR00901
+
+Multiplied by total tax rate Percentage
+
+*Line 5c: Taxable Medicare Wages and Tips *
+
+The calculation for Line 5c is as follows:
+
+This line reflects the amount in the FICA Medicare Wages field in the Employee Summary window plus the amount in the FICA Medicare Tips fields in the Employee Tips Summary window summed for each employee and each applicable month. 
+
+Next, the summed amount is multiplied by the employee and employer FICA Medicare Tax Rate).   
+
+
+Fields used to Calculate Line 5c on the 941 in GP
+
++	FICA Medicare Wages (array)	        | Employee Summary      | 	UPR00900
++	FICA Medicare Tips Wages (array)	| Employee Tips Summary |   UPR00901
+
+Multiplied by total tax rate Percentage 2.9% up to $200,000.
+
+Found in Payroll Tax Tables | Tools | Setup | System | Payroll Tax
+Codes EFICM (Employer) FICAM (Employee)
+
+*Line 5d: Taxable Wages & Tips subject to Additional Medicare Tax Withholding*
+
+The calculation for Line 5d is as follows:
+
+Microsoft Dynamics GP sums FICA Medicare Wages in the Employee Summary window (UPR00900) and the FICA Medicare Tips fields in the Employee Tips Summary window (UPR00901) for each month of the year for wages over $200,000.
+
+Microsoft Dynamics GP then multiplies that by .9% for the Employee only.
+
+Calculation for Line 5d on the 941 in GP
+
+
++	FICA Medicare Wages (array)	    | Employee Summary       |    	UPR00900
++	FICA Medicare Tips Wages (array)	Employee Tips Summary|  	UPR00901
+Multiplied by total tax rate Percentage
+
+Additional .9% over 200,000
+	Employee FICA Med Tax Rate 
+
+Currently 2.35 (1.45 + .9) for employee wages over 200,000	
+
+*Line 5e: Total Social Security and Medicare Taxes *
+
+Line 5e sums the amounts in Line 5a through Line 5d:
+
+Calculation for Line 5e on the 941 in GP
+
++	Line 5a	Taxable Social Security Wages
++	Line 5b	Taxable Social Security Tips
++	Line 5c	Taxable Medicare Wages and Tips
++	Line 5d	Taxable Wages and Tips subject to Additional Tax Withholding
+
+*LINE 6: TOTAL TAXES BEFORE ADJUSTMENTS *
+Line 6 sums the amounts in Line 3 and Line 5e:
+
+Calculation for Line 6 on the 941 in GP
+
++	Line 3	Total Income Tax Withheld from wages, tips, and other compensation
++	Line 5e	Sum of amounts in Line 5a through 5d
+
+*LINE 7: CURRENT QUARTER’S FRACTIONS OF CENTS *
+The calculation for Line 7 is as follows:
+First Microsoft Dynamics GP finds the Actual Social Security Tax Withheld as follows: 
+
+GP sums the amounts in the FICA Soc Sec Tax Withheld field and the FICA Medicare Tax Withheld field for each employee in each applicable month in the UPR00900 table.  
+
+Next Microsoft Dynamics GP adds the Employer FICA Soc Sec Tax Withheld field and the FICA Medicare Tax Withheld EFIC Soc Sec W/H field for each payroll that is processed in the UPR30200 table.
+
+Finally, the Actual Social Security Tax Withheld is subtracted line 5e (Total Social Security and Medicare Taxes).
+
+Fractions of Cents = Total Social Security and Medicare Taxes – Actual Social Security Tax Withheld
+
+Calculation for Line 7 fractions of cents on the 941 in GP
+
++	FICA Social Security Tax Withheld Liability for quarter	    | Payroll Edit Federal Tax Liabilities	UPR30200
++	FICA Medicare Withheld Tax Liability for quarter	        | Payroll Edit Federal Tax Liabilities	UPR30200
++	Employer FICA Social Security Tax Withheld Liability        | Payroll Edit Federal Tax Liabilities	UPR30200
++	Employer FICA Medicare Withheld Tax Liability for quarter 	| Payroll Edit Federal Tax Liabilities	UPR30200
+Subtracted from	Line 5e	Total Social Security and Medicare Taxes
+
+
+When the amount is a positive: GP is telling you that you withheld more than expected (the amount is amount over and above what should have been withheld).
+
+When the amount is a negative: GP is telling you that you withheld less than expected (not enough was withheld either from the employee or the employer compared to wages).
+
+*LINE 9: CURRENT QUARTER’S ADJUSTMENTS FOR TIPS AND GROUP-TERM LIFE INSURANCE *
+
+Line 9 is the sum of the Uncollected FICA Social Security and Uncollected FICA Medicare fields in the Employee Tips Summary window (UPR00901) for all employees in each applicable month. 
+
+The result is displayed as a negative number.
+
+
+Calculation for Line 9 on the 941 in GP
+
++	Uncollected FICA Social Security (array)	| Employee Tips Summary  |	UPR00901
++	Uncollected FICA Medicare (array)	        | Employee Tips Summary  |	UPR00901
+
+
+*LINE 10 : TOTAL TAXES AFTER ADJUSTMENTS *
+Line 10 sums the amounts in Line 6, Line 7, and line 9:
+
+Calculation for Line 10 on the 941 in GP
+
++	Line 6 – Total taxes before adjustments	Sum of Line 3 and Line 5e
+(Total Income Tax Withheld from wages, tips and other compensation + Total Social Security and Medicare Taxes)
+
++	Line 7	Current quarter’s fraction of cents 
+
++	Line 9	Current quarter’s adjustments for tips and group term life insurance (usually negative)
+
+*LINE 14: SEMIWEEKLY DEPOSITORS: COMPLETE SCHEDULE B*
+Informational for Semiweekly Depositors
+
+*LINE 14: TOTAL LIABILITY MONTH 1*
+The calculation for line 14 total liability for month 1 is as follows:
+
+Sum of the Federal Tax Withheld Liability, the FICA Social Security Tax Withheld Liability, the FICA Medicare Withheld Tax Liability, the Employer FICA Social Security Tax Withheld Liability, and the Employer FICA Medicare Withheld Tax Liability fields from the Payroll Tax Liability Table (UPR30200) for the 1st month of the quarter.
+
+
+Calculation for Line 14 Liability Month 1 on the 941 in GP
+
++	Federal Tax Withheld Liability for 1st month in Quarter	                    | Payroll Edit Federal Tax Liabilities	UPR30200
++	FICA Social Security Tax Withheld Liability for 1st month in Quarter        | Payroll Edit Federal Tax Liabilities	UPR30200
++	FICA Medicare Withheld Tax Liability for 1st month in Quarter	            | Payroll Edit Federal Tax Liabilities	UPR30200
++	Employer FICA Social Security Tax Withheld Liability for 1st month Quarter	| Payroll Edit Federal Tax Liabilities	UPR30200
++	Employer FICA Medicare Withheld Tax Liability for 1st month in Quarter  	| Payroll Edit Federal Tax Liabilities	UPR30200
+
+
+*LINE 14: TOTAL LIABILITY MONTH 2*
+The calculation for line 14 total liability for month 2 is as follows:
+
+Sum of the Federal Tax Withheld Liability, the FICA Social Security Tax Withheld Liability, the FICA Medicare Withheld Tax Liability, the Employer FICA Social Security Tax Withheld Liability, and the Employer FICA Medicare Withheld Tax Liability fields from the Payroll Tax Liability Table (UPR30200) for the second month of the quarter.
+
+Calculation for Line 14 Liability Month 2 on the 941 in GP
+
++	Federal Tax Withheld Liability for 2nd month in Quarter                 	| Payroll Edit Federal Tax Liabilities	UPR30200
++	FICA Social Security Tax Withheld Liability for 2nd month in Quarter	    | Payroll Edit Federal Tax Liabilities	UPR30200
++	FICA Medicare Withheld Tax Liability for 2nd month in Quarter	            | Payroll Edit Federal Tax Liabilities	UPR30200
++	Employer FICA Social Security Tax Withheld Liability for 2nd month Quarter	| Payroll Edit Federal Tax Liabilities	UPR30200
++	Employer FICA Medicare Withheld Tax Liability for 2nd month in Quarter      | Payroll Edit Federal Tax Liabilities	UPR30200
+
+*LINE 14: TOTAL LIABILITY MONTH 3 *
+The calculation for line 14 total liability for month 3 is as follows:
+
+Sum of the Federal Tax Withheld Liability, the FICA Social Security Tax Withheld Liability, the FICA Medicare Withheld Tax Liability, the Employer FICA Social Security Tax Withheld Liability, and the Employer FICA Medicare Withheld Tax Liability fields from the Payroll Tax Liability Table (UPR30200) for the third month of the quarter.
+
++	Federal Tax Withheld Liability for 3rd month in Quarter                 	| Payroll Edit Federal Tax Liabilities	UPR30200
++	FICA Social Security Tax Withheld Liability for 3rd month in Quarter	    | Payroll Edit Federal Tax Liabilities	UPR30200
++	FICA Medicare Withheld Tax Liability for 3rd month in Quarter	            | Payroll Edit Federal Tax Liabilities	UPR30200
++	Employer FICA Social Security Tax Withheld Liability for 3rd month Quarter	| Payroll Edit Federal Tax Liabilities	UPR30200
++	Employer FICA Medicare Withheld Tax Liability for 3rd month in Quarter      | Payroll Edit Federal Tax Liabilities	UPR30200
+
+*LINE 14: TOTAL*
+The calculation for line 14 Total is the sum of Line 14 total liability month 1, Line 14 total liability month 2, and Line 14 total liability month 3:
+
+Calculation for Line 14 Total on the 941 in GP
+
++	Line 14 total liability month 1
++	Line 14 total liability month 2
++	Line 14 total liability month 3
+
 
 #### Closing a year
 
@@ -7325,7 +7735,7 @@ You can use the Edit W-2 Information window to verify and make changes to an emp
 
 1. Open the Edit W-2 Information window.(HR & Payroll \>\> Routines \>\> Payroll \>\> Edit W-2s)
 
-    ![A screenshot](media/9e6332cdad1fdc154295311ab32577f1.jpg)
+    ![Screenshot of the Edit W 2 Information window.](media/9e6332cdad1fdc154295311ab32577f1.jpg)
 
 2. Select a sorting option at the bottom of the window. This determines how the employee IDs will be sorted in the lookup window and also the order the records will appear when using the browse buttons.
 
@@ -7371,7 +7781,7 @@ printed on W-2 statements and then print the statements.
 
 1. Open the Print W-2 Forms window. (HR & Payroll \>\> Routines \>\> Payroll\>\> Print W-2s)
 
-    ![screenshot](media/365516adb0b6ca00c79fdf8767c69aab.jpg)
+    ![Screenshot of the Print W 2 Forms window.](media/365516adb0b6ca00c79fdf8767c69aab.jpg)
 
 2. Select a year to print W-2 statements for.
 
@@ -7784,7 +8194,7 @@ use, and the next earnings statement number.
 1. Open the Direct Deposit Setup window. (HR & Payroll \>\> Setup \>\> Payroll
     \>\> Direct Deposit)
 
-    ![A screenshot ](media/6cb1e11f305468be8d8102cefb6d1c26.jpg)
+    ![Screenshot of the Direct Deposit Setup window.](media/6cb1e11f305468be8d8102cefb6d1c26.jpg)
 1. Mark Active to turn on Payroll Direct Deposit.
 
     You can mark Inactive to turn off Direct Deposit for a single pay run. However, we recommend that you select No Deposits this Payroll in the Deposit Method drop-down list in the Direct Deposit Print window.
@@ -7941,7 +8351,7 @@ affect the ACH files you generate, you can refer to the following
 illustrations. The information displayed in the following ACH File was
 generated from the ACH Fields Setup window shown.
 
-![A screenshot](media/482cd47ebf113903f4dca8ac3db9dc29.jpg)
+![Screenshot of an ACH Notepad file and an ACH Fields Setup window.](media/482cd47ebf113903f4dca8ac3db9dc29.jpg)
 
 **To set up the ACH fields:**
 
@@ -8187,7 +8597,7 @@ Use the Employee Direct Deposit Maintenance window to set up direct deposit info
 
 1. Open the Employee Direct Deposit Maintenance window. (HR & Payroll \>\>    Cards \>\> Payroll \>\> Direct Deposit)
 
-    ![A screenshot ](media/cdedf76f47afdd0a550d3c6615aa1ae2.jpg)
+    ![Screenshot of the Employee Direct Deposit Maintenance window.](media/cdedf76f47afdd0a550d3c6615aa1ae2.jpg)
 
 1. Select an Employee ID.
 
@@ -8434,7 +8844,7 @@ Payroll Direct Deposit changes the Payroll process for Microsoft Dynamics GP. Af
 
 1. Open the Print Payroll Checks window. (Transaction \>\> Payroll \>\> Print    Checks)
 
-    ![A screenshot ](media/469bdd3fdf092d3a4244d06aa6a9f34e.jpg)
+    ![Screenshot of the Print Payroll Checks window. The Calculate Employee Deposits process is selected.](media/469bdd3fdf092d3a4244d06aa6a9f34e.jpg)
 
 1. Choose Process to calculate the direct deposit information.
 
@@ -8462,7 +8872,7 @@ can print earnings statements.
 
     If your Deposit Method is Separate from Checks you must print the earnings statements now. You will not be able to print earnings statements after posting.
 
-    ![A screenshot ](media/3f8cd1887e8f823280a01ea05821806e.jpg)
+    ![Screenshot of the Post Payroll Checks window. The Print Earnings Statements process is selected.](media/3f8cd1887e8f823280a01ea05821806e.jpg)
 
 1. Enter a posting date or accept the default date and select Print Earnings Statements in the Process field.
 
@@ -8666,6 +9076,347 @@ Microsoft Dynamics GP check forms are listed here:
 - DD_Mask_Dollar
 
 - DD_Mask_Words
+
+
+## Part 8: Affordable Care Act - ACA
+
+It is mandatory as an Employer that you report 1095-C information to your employees each year.  
+Typically each year changes will be made to the 1095-C form that will require you to install an update to be current with these changes.
+
+The 1095-C form can be printed out of Dynamics GP and includes all the lines on the form with instructions so no extra form needs to be purchased and you can print them on blank paper.  There is also an Employer summary form (1094-C), that you can also print in Dynamics GP.
+
+Requirements to Implement Changes Associated with the Affordable Care Act:
+
+In addition to Payroll, the Human Resources module is required to track Affordable Care Act information in Microsoft Dynamics GP.
+The GREAT news is that Human Resources is FREE with Microsoft Dynamics GP.
+
+Recommended to Track ACA Information:
+•	Install the Year End Updates each year for noted ACA changes.
+•	Install Human Resources
+•	Install Human Resources and Payroll Suite to utilize [Deductions In Arrears (DIA)](/dynamics-gp/payroll/payrollextensions)
+    Deductions In Arrears allows you to track uncollected deductions to ensure they are recovered in a future pay run, vital for ACA coverage.
+•	Add all Employee Dependents
+•	Ensure Benefits and Deductions exist both in Human Resources and Payroll (Integration between HR and PR complete)
+
+[ACA TRAINING VIDEO SETUP](https://www.youtube.com/watch?v=ocx23LFlmyU)
+[ACA Year-End Blog tips](https://community.dynamics.com/gp/b/dynamicsgp/posts/microsoft-dynamics-gp-year-end-update-2021-affordable-care-act-aca)
+
+**Health Insurance Setup Window**
+The Offer Of Coverage Code (line 14)
+Safe Harbor Code (line 16) 
+Employee Required Contribution line 15 (Lowest Cost Premium)
+fields were added to accommodate ACA changes implemented in the Health Insurance Setup window. 
+
+To open the Health Insurance Setup window, click the HR and Payroll series button, click Human Resources on the Setup content pane, click Benefits and Deductions and then click Health Insurance.
+
+The codes you assign in this window will be stored in the BE020230 - HR Benefit Setup table. Users can ‘roll down’ changes made here to the Health Insurance Enrollment Window to update the employee level if desired.
+
+The same above fields are also added to the Human Resource Health Insurance Enrollment window.  
+To open the Health Insurance Enrollment window, click the HR and Payroll series button, click Human Resources on the Cards content pane, click Employee -Benefits and then click Health Insurance.
+
+Users can assign appropriate Affordable Care codes in this window, or code changes can be ‘rolled down’ from the Health Insurance Setup window. ACA codes in the employee enrollment window are stored in the BE010130 - HR Benefit Master table.
+
+
+**Employee Dependents Window**
+The Health Insurance Coverage field was added accommodate ACA changes implemented in the Employee Dependents window. To open the Employee Dependents window, click the HR and Payroll series button, click Human Resources on the Cards content pane, click Employee, and then click Dependents.
+
+Things to know about this window:
+•	Dependents in this window will default to ‘covered’.
+•	If the dependent is not covered, you will need to change the ‘Health Ins. Coverage’ to ‘not covered’ in this window. Dependent coverage information is stored in the UPR00904 table and can be updated throughout the year.
+•	Dependent coverage data in the UPR00904 is not updated retroactively. As such, if the dependent is entered into the system on 03/15/2021: the UPR00904 will store records for that dependent starting in March of 2021 and going forward.
+
+
+**Table Information for ACA Tracking**
+
+UPR40105 - UPR 1095 Setup File
+The UPR40105 holds ACA codes and descriptions. You can see the data stored in this table when you open the Affordable Care Act Codes window.
+This table is utilized to allow users to fill out boxes that will show on the Federal Government’s 1095-C form.
+
+UPR00904 – Payroll Master Dependent ACA
+The UPR00904 table stores a record for every dependent associated with each employee.
+Things to know about this table:
+•	Health Insurance Dependent Coverage (HealthInsDependentCov) field meaning:
+o	1 = Covered			2 = Not Covered
+•	Dependents are marked as ‘covered’ in this table by default
+•	This information can be updated throughout the year, and is tracked on a monthly basis
+
+UPR00905 – Payroll Master Employee ACA
+The UPR00905 table stores Affordable Care Act Codes assigned in the Health Insurance Enrollment window.
+•	ACA Codes can be updated in the Health Insurance Enrollment window.
+•	These codes are tracked monthly throughout the year.
+•	As you make changes to employee benefit records for ACA it will store the GP user date of the change to this table to determine what code will print each month.
+•	If there are multiple date lines in a month, we will take the "latest" date of change for that month.
+
+
+UPR10110 – Payroll Master Dependent ACA History and UPR10111 - Payroll Master Employee ACA History tables
+•	The UPR10110 will be updated during the year-end close is process in Payroll using data from the UPR00904 (Payroll Master Dependent ACA) table. 
+•	The UPR10111 will be updated during the year-end close is process in Payroll using data from the UPR00905 (Payroll Master Employee ACA) table. 
+
+The 1095-C (given to employee from the employer - like a W2- to show Employer Provided Health Insurance Offer and Coverage) and 1094-C (summary the employer fills out of all employees that received the 1095-C) forms will be added in Quarter 1 of 2015.
+When you create the Year End Wage File for the year, all Affordable Care Act information you've been tracking will be accumulated to the year end tables, similar to how we accumulate the W2 information. 
+
+Just like the W2:
+•	You can edit 1095-C information if needed in the Edit W2 window.
+•	Edits will lost if the Year End Wage File is removed and recreated.
+
+***Make sure you are printing the ORIGINAL form and you do not have security set to an older modified version of the 1095-C form***
+
+**Items to help you as you track ACA Information**
+
+1. We do not use the benefit start date for ACA tracking, when a user updates Benefit ACA fields in the window, we track the GP user date at the time and save the changes to the UPR0095 table, this table is then used when you create the year end wage file for the year.
+
+2. There is no electronic filing for ACA in Dynamics GP.  There are ISV products that offer this solution if you need it.
+Greenshades and Integrity-Data will allow you to track ACA in Microsoft Dynamics GP, and just do the electronic filing for you at a lower cost option.
+Thanks to both ISV's for doing this!!
+[Greenshades](https://www.greenshades.com)             
+
+[Integrity Data](http://www.integrity-data.com)
+
+3. You can now add a dependent on the fly in the Edit W2 window under the Dependents button (if one was forgot and the year end wage file has been created), this was a large request from our customers.
+
+4. The all 12 month checkbox is not required for employee so we are populating each individual amount for employee,but on the dependent the covered all 12 month box will be populated.
+
+5. One of the items we still struggle with is inactive employees and to not print a 1095-C form.  With how the ACA rules changed, now you cannot leave a box blank/empty, so when employee Joe leaves the company, what customers do is put 2A in Box 16 - meaning Employee not employed during the month.  When you click the PRINT button for the 1095-C form, if an employee is 2A for all 12 months, the form will NOT print.  I feel this is a great indicator to go by.  You will see the employees get complied in the year end, (incase you need to edit this employee and make changes to the record) but when you go to print, those employees will not be included.
+
+Remember, it is when you click the PRINT button for the 1095-C form, if an employee is 2A for all 12 months, the form will not print. 
+
+If you have not been doing this all year, you can use this script too and remove employees for 1095-C printing.
+This removes employees that have no wages in the year, if you are using payroll we assume employees would have wages.  Back up's are always recommended.
+
+delete a from UPR10111 a
+inner join UPR10101 b
+on a.EMPLOYID = b.EMPLOYID
+and a.YEAR1 = b.RPTNGYR
+where b.RPTNGYR = '2021'
+and b.WGTPCOMP = 0
+
+
+6. Multiple insurance plans (dental and vision examples) dishevel the 1095-C reporting.
+As you review your ACA process YOY another area that was causing ACA data inconsistencies was insurance codes that are non ACA reportable, such as Vision or Dental as an example.  How Dynamics GP will decide to "identify" true ACA recordable codes is from the Health Insurance Setup on the Human Resource side. The field we will use to determine if the code is ACA recordable is at the Setup, None and None for line 14 and 16.  Then we will NOT include this code when we create the year end wage file.
+
+7. When you need to change what is reporting for an employee for a month, change the Dynamics GP user date to the end of that month (lower left of GP window), example, you want to change the month of March and on, set the Microsoft Dynamics GP user date to 3/31/2022 make your record change, and recreate the year end wage file and you will see the change, you can also do this by rolling down from setup by a date.  We always take the last record of the month for what should print on the form.
+
+8. We have had a couple of requests where a few forms have been rejected by the IRS.  Make sure if you are submitting forms, the 1094-C, we only print 1 page as that is all that is in Dynamics GP for information, but the form is actually more pages.  Make sure to complete the entire 1094-C prior to sending in to the IRS.
+
+9. If you print Dependents, they now all moved to their own page (as of 2020 reporting year), no dependents will print on the first page of the 1095-C form as they have in years past.  To print Dependents, make sure to mark the box in the Print W-2 window - Employer provided self-insured coverage.
+
+10. Employee's Age will be calculated and printed on the form (as of 2020 reporting year).  If the employee date of birth is not populated on the employee record, the age will not calculate correctly.
+
+The age will be calculated on the fly when you print the 1095-C form, it is not stored when you create the year end wage file.  It takes the year the year end wage file is created minus birthday year.
+
+The employee birth date is stored under the Additional Information window from the main employee maintenance record, table UPR00100 field brthdate
+
+select brthdate, * from UPR00100
+
+11. The Plan Start Month was required starting with the 2020 year.  We made some modifications to this in the 2021 year.  It will no longer calculate as the "employee" plan start month but Employer plan start month.  
+
+Plan Start Month should indicate the beginning of the plan year for the health plan that was offered to the employee. 
+
+For example, if an employer’s plan year begins in January for all of its employees, the employer will complete the plan start month box for all of its Forms 1095-C with 01. However, if an employer’s plan year operates on a fiscal year of July through June for all of its employees, the employer will complete the plan start month box for all its Forms 1095-C with 07.
+
+We also added this as a field in the Print W-2 window for you to populate to print on the forms.    
+
+ ![ACA](media/ACA2022.JPG)
+
+## Part 9: Employee Self Service 
+
+### Employee Self Service Timecard Setup
+
+The following list is a quick guide of what needs to be setup for Time Cards to work. We will go through each area in detail.
+
+1. Set up Payroll Timecard Approval Workflow  
+2. Timecard Options in Payroll Setup  
+3. Setup up the employee Pay Schedules in Pay Schedule setup and assign to the employees  
+4. Create a timecard restriction and assign to your employees  
+5. Create Batch Prefixes and assign to the appropriate employee  
+6. Create Timecard Assignments and make sure to choose one of them as a default option, assign to employees as necessary  
+
+    Assign Timecard Assignments to employees if you do not want to use the default option, under Cards | Payroll | Timecard Assignments  
+7.	Assign your employee a GP User ID under Employee Maintenance | Additional Information  
+8.	For Managers direct report, create a Supervisor Codes and assign the Supervisor code to the correctly employees in employee maintenance  
+9.	Optional, create a time on behalf code, assign to employee if created  
+
+### Timecard Options Setup
+
+Navigate to HR & Payroll, click Payroll from the Setup area page.  
+
+This will bring you into the Payroll Setup window.  
+
+From this window click Timecard Options, this will bring you into the Timecard Options window.  
+Use the Timecard Options window to specify how direct reports are displayed in the My Team navigation lists and specify an assignment priority. 
+
+The assignment priority indicates which assignment type–employee, position, department, location, or division—takes precedence when an employee enters a timecard.
+Choose Timecard Options to open the Timecard Options window to specify how direct reports are displayed in the My Team navigation list for historical and current timecards and to specify an assignment priority. 
+
+The assignment priority indicates which assignment type–employee, position, department, location, or division—takes precedence when an employee enters a timecard.
+
+This is held in the UPR40200 table Payroll Setup
+VIEWMULTDIR and INCINEMP
+For the direct report options.
+The Timecard Options is stored in the UPR40202 
+
+### Time on Behalf Setup
+
+Navigate to HR & Payroll, click Time on Behalf  from the Setup area page.  This will bring you into the Time on Behalf Setup window.  Use the Time on Behalf Setup window to define and maintain time on behalf codes for your company. You can use the time on behalf codes you define in this window to create specific time on behalf codes for each employee.
+
+This information is stored in the following tables:
+
+- UPR42200  
+- UPR42201 - Department  
+- UPR42202 - Class  
+- UPR42203 – Employee  
+
+Use the Time on Behalf Setup window to define and maintain time on behalf codes for your company. You can use the time on behalf codes you define in this window to create specific time on behalf codes for each employee.
+
+> [!TIP]
+> Admin Code
+> Mark to designate a time on behalf code as an administrator code. This means that all active employees, employee classes, and departments for the time on behalf code are selected. Any new employees, employee classes or departments that are added to the code are selected. 
+
+[Blog to setup a delegate for approval of timecards](https://community.dynamics.com/gp/b/dynamicsgp/posts/create-a-delegate-account-for-39-timecards-pending-approval-39)
+
+**Timecard Assignment Setup**
+
+Navigate to HR & Payroll, click Timecard Assignment Setup  from the Setup area page.  This will bring you into the Timecard Assignment Setup window. 
+ 
+Use the Timecard Assignment Setup window to define and maintain assignment codes for your company.
+
+If you mark DEFAULT for the assignment code, this code acts as a default assignment code for employees that are NOT assigned codes.
+
+The Default checkbox is nice to use and less setup is needed when the box is marked.  
+
+This information is stored in the following tables:
+
+- UPR42300  
+- UPR42301  
+
+### Pay Schedule Setup
+
+Navigate to HR & Payroll, click Pay Schedule Setup from the Setup area page.  This will bring you into the Pay Schedule Setup window.  
+
+Use the Pay Schedule Setup window to create a pay schedule. A pay schedule is a record of the beginning and ending dates of each pay period, for a specific pay period frequency, and for a specific year. You must create a pay schedule for each pay period your company uses, and assign your employees to it. For example, create a weekly pay schedule for employees who are paid weekly, and a monthly pay schedule for employees who are paid monthly. You also can specify how many past and future pay periods will be available to employees to enter time against. 
+
+You can restrict which pay schedule an employee will use when entering timecards based on location, department, position, employee class, an employee ID.
+
+Here are the tables it stores the schedule data
+
+```sql
+SELECT * FROM UPR42100—header
+SELECT * FROM UPR42101—detail
+SELECT * FROM UPR42102—location
+SELECT * FROM UPR42103—department
+SELECT * FROM UPR42104—position
+SELECT * FROM UPR42105—class
+SELECT * FROM UPR42106—employee
+```
+
+Be sure enough past pay periods are displayed to employees. For example, an employee may need to view past pay periods so that she can enter vacation hours for time already taken. Or an employee may have saved—and not yet submitted—a timecard for a previous pay period. If you choose to no longer display past pay periods, the employee will not be able to submit the saved timecard.
+
+You can clear the Use Only Full Pay Periods option to create pay periods that can be shorter than a standard pay period. If this option is cleared, the pay schedule will be 365 days long—or 366 days long for leap years. The last pay period for the year will be one or two days long.
+
+When you use different categories to assign employees to pay schedules, some employees may be assigned to multiple pay schedules. For example, suppose you assigned MonthlyPaySchedule to all employees in the Sales department and BiweeklyPaySchedule to all employees who are managers. Now assume that Michael is the manager of the Sales department. This means he is assigned to both MonthlyPaySchedule and BiweeklyPaySchedule. However, only one pay schedule can be used when entering timecards. The pay schedule an employee will use when entering timecards is determined by the assignment priority.
+
+> [!TIP]
+> Pay Schedules are very flexible.  Once setup, when the Navigation list appears of all open timecards, if it is slow or seems to hang, review the tables above.  You should only pick 1 way to assign pay schedules.  For example, do not assign pay schedules by Department and Position, just pick 1 way to assign.  If we have enteries in multiple tables above, it will cause timecards to load slow.
+
+[Blog with tips on how you can change the timecard pay period calendar in employee self-service](https://community.dynamics.com/gp/b/dynamicsgp/posts/payroll-timecard-schedule-setup-tips)
+
+[Blog on Employee to Direct Manager Workflow and how it works](https://community.dynamics.com/gp/b/dynamicsgp/posts/employee-to-direct-manager-workflow-process-how-it-works)
+
+
+### Timecard Restriction Setup
+
+Navigate to HR & Payroll, click Timecard Restriction Setup  from the Setup area page.  This will bring you into the Timecard Restriction Setup window.  
+
+A timecard restriction is a group of rules controlling timecards. For example, a timecard restriction specifies whether employees must enter start and stop times on their timecards. A timecard restriction also specifies whether employees must electronically sign their timecards.  
+
+You must create timecard restrictions and assign them to employees. The following information explains more about timecard restrictions, including how to create them and assign them to employees.
+
+- Set hour requirements  
+
+    Indicate the minimum and maximum number of hours that an employee can enter on a timecard.
+- Indicate whether start and stop times are required  
+
+    Indicate whether employees must enter the time they started and stopped working each day. For example, instead of entering eight hours of work for a specific day, they’ll need to enter 8:00 A.M. as the starting time and 5:00 P.M. as the stopping time.  
+
+- Indicate which fields are editable  
+
+    Indicate whether employees will be able to view and edit specific fields on their timecards.
+
+When an employee enters time against a pay code, the fields that you select will be available on the employee’s timecard. When an employee enters time against a time code, only the Notes field will be available (that is, if you select the Notes check box).
+
+When you use different categories to assign employees to timecard restrictions, some employees may be assigned to multiple timecard restrictions. For example, let’s say you assigned TimecardRestrictionSales to all employees in the Sales department and TimecardRestrictionManagers to all employees who are managers. Now assume that Michael is the manager of the Sales department. This means he is assigned to both TimecardRestrictionSales and TimecardRestrictionManagers. However, only one timecard restriction can be used when entering time cards. The timecard restriction an employee will use when entering timecards is determined by the assignment priority. You specify the assignment priority in the Timecard Options window.
+
+```sql
+SELECT * FROM UPR42400--Restriction Setup
+SELECT * FROM UPR42401--Required Start / Stop times
+SELECT * FROM UPR42403--Restriction by Department
+SELECT * FROM UPR42402--Restriction by Location ID
+SELECT * FROM UPR42404--Restriction by Jobtitle/Position
+SELECT * FROM UPR42405--Restriction by Employee Class
+SELECT * FROM UPR42406--Restriction by Employee ID
+```
+
+### Timecard Batches
+
+Navigate to HR & Payroll, click Timecard Batches  from the Setup area page.  This will bring you into the Batch Prefix Setup window.  
+
+The Batch Prefix Setup window to create batch prefixes to identify the Payroll batches in which timecards will be saved in. The batch prefix you create will identify the Payroll batches in which timecards will be saved in. After you create a batch prefix, you’ll need to assign it to employees. For example, you can create a batch prefix named SALESTIME to identify timecards submitted by the Sales department.
+
+When employee timecards are approved, they are saved in batches. Batches are used to group transactions for posting, and are identified by a name or a number.
+
+After creating batch prefixes, assign them to your employees. If an employee is not assigned to a batch prefix, he or she can’t enter timecards.
+You can assign batch prefixes to each employee individually, or to specific groups of employees. For example, you can assign a batch prefix to all employees in a certain location or department.
+
+This is stored in the following tables
+
+```sql
+SELECT * FROM UPR42500 – Batch Prefix
+SELECT * FROM UPR42501 - Location ID
+SELECT * FROM UPR42502 -  Department
+SELECT * FROM UPR42503 - Jobtitle/Position
+SELECT * FROM UPR42504 - Employee Class
+SELECT * FROM UPR42505 - Employee ID
+```
+
+### Employee Setup
+
+Each employee will need to be tied to a Microsoft Dynamics GP user.  This will be the identification between what information you will see on your Time Management area.
+Navigate to HR & Payroll, click Time on Behalf  from the Card area page.  This will bring you into the Employee Time on Behalf  window.  Use the Employee Time on Behalf Setup window to define and maintain time on behalf codes for a specific employee. You can use the time on behalf codes you define in this window to create specific time on behalf codes for each employee.
+
+Admin Code
+Mark to designate a time on behalf code as an administrator code. This means that all active employees, employee classes, and departments for the time on behalf code are selected. Any new employees, employee classes or departments that are added to the code are selected. 
+
+This is stored in the following tables
+
+```sql
+SELECT * FROM UPR00200 –
+SELECT * FROM UPR00201 - Department
+SELECT * FROM UPR00202 - Class
+SELECT * FROM UPR00203 - Employee
+```
+
+Navigate to HR & Payroll, click  Timecard Assignment from the Card area page.  This will bring you into the Employee Timecard Assignment  window.  Use the Employee Timecard Assignment window to enter timecard assignment information for a specific employee.
+
+> [!NOTE]
+> With the new default code in the setup, there is less need to do this by specific employee, exceptions from the default code you have setup.
+
+This is stored in the following tables   
+
+```sql
+SELECT * FROM UPR00210 –
+SELECT * FROM UPR00211 – Detail  
+```
+
+Navigate to HR & Payroll, click  Employee  from the Card area page.  This will bring you into the Employee Maintenance window, choose Additional Information.  
+
+Assign a GP User ID to the employee they are associated with.
+
+This is stored in the UPR00100 Payroll Master table column USERID and each employee that wants access to enter timecards needs to have a GP User ID setup.
+
+The manager / supervisor field off the employee record is important about where the employee timecard will appear and what is under your Navigation list as a manager.
+In this example Terry is a manager of a select group of employees.
+For the workflow piece, it will be using activity directory to determine who is the manager and where the timecard will go based on active directory settings.
+
 
 ## Additional Feature Functionality added to Payroll
 

@@ -1,12 +1,12 @@
 ---
 title: "Invoicing in Dynamics GP - Part 2"
-description: "Examine how the Invoicing module works in Microsoft Dynamics GP."
+description: "Learn how the Invoicing module works in Microsoft Dynamics GP with part two of this walkthrough, which covers transaction entries."
 keywords: "invoicing"
 author: theley502
-manager: edupont
+manager: jswymer
 ms.prod: dynamics-gp
 ms.topic: article
-ms.reviewer: edupont
+ms.reviewer: jswymer
 ms.author: theley
 ms.date: 07/13/2020
 ---
@@ -307,7 +307,7 @@ If Override Price is marked in the Invoicing Setup Options window, you can chang
 
 1. When you enter a quantity, the Invoice Returned Quantities Entry window will open and you can specify which site the items will be returned to. You also can specify the quantity type for the returned items—on hand, returned, in use, in service, or damaged.
 
-![IMAGE](media/INVRQE.jpg)
+![IMAGE](media/INVRETQ.jpg)
 
 The item will be returned automatically at the current cost. If the Override Item Unit Cost for Returns option is marked in the Invoicing Setup Options window, you'll be able to change the cost.
 
@@ -494,7 +494,7 @@ quantity shortage for the item at the default site.
 
     IMAGE - INVQDE.jpg
 
-    ![Screenshot](media/66dd8e2d7a25c58f2c1efbeb54c24f1b.jpg)
+    ![Screenshot](media/INVQDE.jpg)
 
 2. Change the Site ID.
 

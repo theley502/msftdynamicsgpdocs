@@ -1,16 +1,16 @@
 ---
-title: "Client installation"
+title: "Installing Dynamics GP on subsequent computers"
 description: "Get Dynamics GP on each user's computer and synchronize data with the server."
 keywords: "install"
-author: edupont04
-ms.author: edupont
+author: jswymer
+ms.author: jswymer
 manager: annbe
 applies_to: 
 ms.date: 08/23/2018
 ms.prod: dynamics-gp
 ms.topic: article
 ms.assetid: 7b191c03-4d6c-490e-8257-33888b08f16d
-ms.reviewer: edupont
+ms.reviewer: jswymer
 ---
 # Installing Dynamics GP on subsequent computers
 
@@ -48,9 +48,9 @@ To install Dynamics GP on an additional computer:
 
 | **Option**   | **What happens**  |
 |--------------|-----------------|
-| ![component icon](media/installed-component.png "Component icon") Run from My computer     | The selected feature will be installed on the local hard disk. (This option installs the feature, but not sub–features.) |  
-| ![component icon](media/installed-component.png "Component icon") Run all from My computer | Will install the feature and all of its sub–features.                                                                    |  
-| ![component icon](media/not-installed-component.png "Component icon") Not available            | Will not install the selected feature or sub–features.                                                                   |  
+| ![Run icon.](media/installed-component.png "Component icon") Run from My computer     | The selected feature will be installed on the local hard disk. (This option installs the feature, but not sub–features.) |  
+| ![Run all icon.](media/installed-component.png "Component icon") Run all from My computer | Will install the feature and all of its sub–features.                                                                    |  
+| ![Not available icon.](media/not-installed-component.png "Component icon") Not available            | Will not install the selected feature or sub–features.                                                                   |  
 
 When you click a button for a feature, a pop-up menu of options appears. Refer to the table for more information about each option.
 

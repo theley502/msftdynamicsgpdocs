@@ -3,11 +3,11 @@ title: "Purchase Order Processing part 6"
 description: "Learn about Purchasing for Dynamics GP, more specifically the utilities available."
 keywords: "purchase order"
 author: tnistler
-manager: edupont
+manager: jswymer
 
 ms.prod: dynamics-gp
 ms.topic: article
-ms.reviewer: edupont
+ms.reviewer: jswymer
 ms.author: theley
 ms.date: 01/23/2019
 
@@ -169,7 +169,7 @@ If you print this report before you reconcile, you can verify which documents in
 1.  Open the Reconcile Purchasing Documents window.
     (Purchasing \>\> Utilities \>\> Reconcile Purchasing Documents)
 
-![screenshot Reconcile Purchasing Documents](media/POage232.jpg)
+![Screenshot of window, showing all selected for purchase order and print report only selected for options.](media/POage232.jpg)
 
 2.  Using the All, To, and From fields, select a document range.
 
@@ -216,7 +216,7 @@ When you reconcile purchase orders, the following information will be recalculat
 1.  Open the Reconcile Purchasing Documents window.
     (Purchasing \>\> Utilities \>\> Reconcile Purchasing Documents)
 
-![screenshot Reconcile Purchasing Documents](media/POage234.jpg)
+![Screenshot of window, showing all selected for purchase order and reconcile and print report selected for options.](media/POage234.jpg)
 
 2.  Using the All, To, and From fields, select a document range.
 

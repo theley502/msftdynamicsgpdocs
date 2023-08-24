@@ -2,9 +2,9 @@
 title: "Upgrade from Dynamcis GP 2013"
 description: "See the module upgrade information to verify the upgrade from Dynamics GP Release 2013."
 keywords: "upgrade"
-author: edupont04
-ms.author: edupont
-manager: edupont
+author: jswymer
+ms.author: jswymer
+manager: jswymer
 applies_to: 
 ms.date: 08/24/2018
 ms.prod: dynamics-gp
@@ -94,11 +94,11 @@ Additional 1099 boxes and fields have been added for the 1099 tax types in the f
 | Dividend            | 10 Exempt Interest Dividends                          | 0.00           |
 |                     | 11 Specified Private Activity Bond Interest Dividends | 0.00           |
 |                     | 14 State Tax Withheld                                 | 0.00           |
-|                     | Foreign Country or U.S. Possession                    |                |
+|                     | Foreign Country/Region or U.S. Possession                    |                |
 |                     | State Code                                            |                |
 |                     | State Identification No.                              | 0.00           |
 | Individual          | 13 State Tax Withheld                                 |                |
-|                     | Foreign Country or U.S. Possession                    |                |
+|                     | Foreign Country/Region or U.S. Possession                    |                |
 |                     | Tax Exempt Bond CUSIP No.                             |                |
 |                     | State Code                                            |                |
 |                     | State Identification No.                              |                |
