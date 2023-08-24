@@ -7,7 +7,7 @@ ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: jswymer
 ms.author: theley
-ms.date: 01/28/2019
+ms.date: 08/24/2023
 ---
 
 # Microsoft Dynamics GP Receivables Management Part 5: Utilities and routines
@@ -1239,6 +1239,48 @@ checks.*
 
 3. Choose Process to remove the selected transactions. The report is printed if
     you chose to print it.
+
+#### Multicurrency and Paid Transaction Removal
+
+The purpose of this section is steps on how to fix an issue that may occur with multicurrency invoices in receivables that pop up with an extra 0.01 in the functional currency balances. 
+This specific solution is necessary when Paid Transaction Removal (PTR) has been run against the affected documents and are no longer available to move from history to open. 
+This may occur with sales invoices that are built as multicurrency and shows a 0.01 cent balance on HATB for sales on that transaction.  
+
+IMPORTANT! Remember to test this solution first against a [test version of your live data](http://support.microsoft.com/kb/871973). 
+
+What you need: 
+1.	Access to Microsoft SQL server 
+2.	The invoice document number 
+3.	The All-RM script, contact support if you do not have this.
+4.	The APFRMAPLYAMT
+
+1. Run the All-RM script against the invoice 
+-The Key table to look at is table RM30201, the RM Apply history Table.  
+First, take a look at the columns APPTOAMT and APFRMAPLYAMT. This is the apply credit and apply debit columns for how the document was applied. These should be the same, and you are looking for the row where they are not. Take note of APFRMAPLYAMT and APPTOAMT that value will be needed later.  
+Second, look at APFRDCNM and APFRDCTY on the same row as the non-matching entries from the previous step. This will tell you the name of the document, and what kind of document is affecting the invoice. Typically, it will be a credit memo, a 7 in APFRDCTY. If it is another type of document, this may be a different issue.  
+
+2. Take the Doc number and Doc type from step 1 and plug it into the All-RM script.  
+This is to confirm that certain tables have values that match our circumstances.  
+a.	On table RM30101, ORTRXAMNT should equal APFRMAPLYAMT from step 1.  
+b.	On table RM30201, APPTOAMT should match what you saw in step 1. 
+c.	On table RM30301, DEBITAMT and CRDAMNT should equal the value of APFRMAPLYAMT from step 1.  
+
+3. Once you have confirmed the key info in Step 1 and 2, use it to fill out the script and execute the following against test version of your data: 
+update RM30101 set ORTRXAMT = (ORTRXAMT+0.01) where DOCNUMBR = 'document you found in step1' 
+update RM30201 set APPTOAMT = (APPTOAMT+0.01) where APFRDCNM = 'document you found in step 1' 
+update RM30301 set DEBITAMT = (DEBITAMT+0.01) where DOCNUMBR = 'document you found in step 1' and DEBITAMT = the value of APFRMAPLYAMT 
+  
+update RM30301 set CRDTAMNT = (CRDTAMNT+0.01) where DOCNUMBR = ''document you found in step 1' and CRDTAMNT = the value of APFRMAPLYAMT 
+ 
+4. Run the HITB and check if the 0.01 cent balance has been removed.  
+If your balance hasn’t changed, run the ALL RM against the invoice. Check if the Apply table has changed as intended. If not, confirm your update statement has the correct values and names and run again.  
+If your balance has gone from 0.01 to 0.02, it is possible the wrong row was selected in step 1, part 2. If so, roll back the change and try again.  
+
+5. Test this solution on your live data. Make sure you backup live data first! 
+Documentation on how to backup SQL
+[Quickstart: Back up & restore database with SSMS - SQL Server | Microsoft Learn](https://learn.microsoft.com/en-us/sql/relational-databases/backup-restore/quickstart-backup-restore-database?view=sql-server-ver16&tabs=ssms) 
+ 
+If you run into any questions or issues with using this solution, please execute the All-RM script of the invoice in question and open a case with Microsoft support.  
 
 ### Printing a VAT return
 
