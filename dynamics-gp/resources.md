@@ -8,7 +8,7 @@ ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: jswymer
 ms.author: theley
-ms.date: 9/1/2023
+ms.date: 9/6/2023
 ---
 # Microsoft Dynamics GP Resource Directory
 
@@ -72,20 +72,6 @@ This page offers easy access to Microsoft Dynamics GP resources. This page is in
 - [Canadian Payroll Taxes and Year - End](/dynamics/s-e/gp/cagptuye2018_285)
 - [Management Reporter Install and Service Packs](/dynamics/s-e/mr/mroverview_435)
 
-## Microsoft Dynamics GP 2016 R2 and RTM
-
-- [GP 2016 R2 - Feature Blog Series](https://community.dynamics.com/gp/b/dynamicsgp/archive/2016/11/11/microsoft-dynamics-gp-2016-r2-new-feature-blog-series-schedule)
-- [GP 2016 RTM - Feature Blog Series](https://community.dynamics.com/gp/b/dynamicsgp/archive/2016/03/30/microsoft-dynamics-gp-2016-new-features-blog-series-schedule)
-
-  
-- [Product Release Downloads for Microsoft Dynamics GP 2016](/dynamics/s-e/gp/MDGP2016_Release_Download_371)
-- [Service Pack, Hotfix, and Compliance Update Patch Releases for Microsoft Dynamics GP 2016](/dynamics/s-e/gp/MDGP2016_PatchReleases_370)
-- [Core System Requirements for Microsoft Dynamics GP](/dynamics/s-e/gp/mdgp2016_system_requirements)  
-- [Upgrade Hot Topic](/dynamics/s-e/gp/hot_topic_mdgp2016upgrade_413)
-- [US Year-End](/dynamics/s-e/gp/usgpye2016_395)  
-- [US Taxes](/dynamics/s-e/gp/tugp2016_390)  
-- [Canadian Payroll Taxes and Year - End](/dynamics/s-e/gp/cagptuye2016_284)
-- [Management Reporter Install and Service Packs](/dynamics/s-e/mr/mroverview_435)
 
 ## Important Links
 
@@ -99,12 +85,7 @@ This page offers easy access to Microsoft Dynamics GP resources. This page is in
 
 - [Microsoft Dynamics Database Maintenance Utility](https://mbs2.microsoft.com/fileexchange/?fileID=cde6687d-abb6-46bf-ae0f-6588838cb174)
 
-## Documentation and Resources
-
-- [Application](/dynamics-gp/)
-- [Developer](/previous-versions/dynamicsgp/developer/bb219081%28v=msdn.10%29)
-
-Important links on [Microsoft Dynamics GP 2015, 2013, 2010 & 10.0](https://mbs2.microsoft.com/fileexchange/?fileID=7b89589c-da4b-4efd-bb2f-994605af7d67).
+**Downloads for prior versions**  [Microsoft Dynamics GP 2016, 2015, 2013, 2010 & 10.0](https://mbs2.microsoft.com/fileexchange/?fileID=7b89589c-da4b-4efd-bb2f-994605af7d67).
 
 ## Detailed Module Information
 
