@@ -8,7 +8,7 @@ ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: jswymer
 ms.author: theley
-ms.date: 3/30/2023
+ms.date: 11/3/2023
 ---
 
 # Developer Tools
@@ -28,3 +28,7 @@ The web service reference contains detailed information about the operations, cl
 ## Visual Studio Tools
 
 This documentation contains detailed information about using [Visual Studio Tools for Microsoft Dynamics GP](/previous-versions/dynamicsgp/developer/cc543538(v=msdn.10)) to develop integrating applications. 
+
+## Integration Manager
+
+Integration Manager for Microsoft Dynamics GP is a tool designed to help you move data quickly and easily between applications, without the need for custom programming or extensive knowledge of application databases.  It is a tool that will allow you to integrate data from external sources into Microsoft Dynamics GP. Integration Manager has the capability to read data from text files, Open Database Connectivity (ODBC) sources, such as Microsoft Access databases, Excel Spreadsheets and Microsoft SQL tables.
